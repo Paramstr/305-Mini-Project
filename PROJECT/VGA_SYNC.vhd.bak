@@ -1,0 +1,10 @@
+library IEEE;
+use IEEE.std_logic_1164.all;   
+use IEEE.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+
+ENTITY VGA_SYNC IS
+	PORT(Clock_25MHz, red, green, blue: IN std_logic;
+	     red_out, green_out, blue_out, horiz_sync_out, vert_sync_out: OUT std_logic
+END VGA_SYNC;
