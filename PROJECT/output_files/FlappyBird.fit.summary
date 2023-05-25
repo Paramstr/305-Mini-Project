@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed May 24 23:51:55 2023
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fitter Status : Successful - Thu May 25 20:51:04 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : FlappyBird
 Top-level Entity Name : FlappyBird
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 899 / 18,480 ( 5 % )
-Total registers : 334
+Logic utilization (in ALMs) : 905 / 18,480 ( 5 % )
+Total registers : 325
 Total pins : 34 / 224 ( 15 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )

@@ -1,0 +1,139 @@
+H:/Documents/GitHub/305-Mini-Project/PROJECT/pipes.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/pipes.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity pipes
+-- Compiling architecture behavior of pipes
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/VGA_SYNC.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/VGA_SYNC.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity VGA_SYNC
+-- Compiling architecture a of VGA_SYNC
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/ball.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/ball.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ball
+-- Compiling architecture behavior of ball
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/char_rom.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/char_rom.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+** Error: H:/Documents/GitHub/305-Mini-Project/PROJECT/char_rom.vhd(6): (vcom-1598) Library "altera_mf" not found.
+** Error: H:/Documents/GitHub/305-Mini-Project/PROJECT/char_rom.vhd(7): (vcom-1136) Unknown identifier "altera_mf".
+** Note: H:/Documents/GitHub/305-Mini-Project/PROJECT/char_rom.vhd(9): VHDL Compiler exiting
+
+} {8.0 10.0} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/flappy_bird.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/flappy_bird.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity flappy_bird
+-- Compiling architecture behavior of flappy_bird
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/LFSR.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/LFSR.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity lfsr
+-- Compiling architecture rtl of lfsr
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/scoreTracker.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/scoreTracker.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity scoreTracker
+-- Compiling architecture behaviour of scoreTracker
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_counter.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_counter.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity BCD_counter
+-- Compiling architecture counting of BCD_counter
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_to_7Seg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_to_7Seg.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity BCD_to_7Seg
+-- Compiling architecture arc1 of BCD_to_7Seg
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/pll.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/pll.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pll
+-- Compiling architecture rtl of pll
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/mouse.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/mouse.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MOUSE
+-- Compiling architecture behavior of MOUSE
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/top_bar.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/top_bar.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity top_bar
+** Error: H:/Documents/GitHub/305-Mini-Project/PROJECT/top_bar.vhd(16): near ")": (vcom-1576) expecting IDENTIFIER.
+
+} {10.0 11.0} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/collisions.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/collisions.vhd
+Model Technology ModelSim SE vcom 2020.2 Compiler 2020.04 Apr 19 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity collisions
+-- Compiling architecture behaviour of collisions
+
+} {} {}} H:/Documents/GitHub/305-Mini-Project/PROJECT/DE0_CV_golden_top.v {1 {vlog -work work -vopt -stats=none H:/Documents/GitHub/305-Mini-Project/PROJECT/DE0_CV_golden_top.v
+Model Technology ModelSim SE vlog 2020.2 Compiler 2020.04 Apr 19 2020
+-- Compiling module DE0_CV_golden_top
+
+Top level modules:
+	DE0_CV_golden_top
+
+} {} {}}

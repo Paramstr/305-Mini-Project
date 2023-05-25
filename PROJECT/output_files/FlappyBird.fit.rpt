@@ -1,6 +1,6 @@
 Fitter report for FlappyBird
-Wed May 24 23:51:55 2023
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Thu May 25 20:51:04 2023
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
 ---------------------
@@ -62,30 +62,30 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Fitter Summary                                                                ;
-+---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed May 24 23:51:55 2023       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; FlappyBird                                  ;
-; Top-level Entity Name           ; FlappyBird                                  ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CEBA4F23C7                                 ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 899 / 18,480 ( 5 % )                        ;
-; Total registers                 ; 334                                         ;
-; Total pins                      ; 34 / 224 ( 15 % )                           ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
-; Total RAM Blocks                ; 0 / 308 ( 0 % )                             ;
-; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Fitter Summary                                                                    ;
++---------------------------------+-------------------------------------------------+
+; Fitter Status                   ; Successful - Thu May 25 20:51:04 2023           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; FlappyBird                                      ;
+; Top-level Entity Name           ; FlappyBird                                      ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CEBA4F23C7                                     ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 905 / 18,480 ( 5 % )                            ;
+; Total registers                 ; 325                                             ;
+; Total pins                      ; 34 / 224 ( 15 % )                               ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                           ;
+; Total RAM Blocks                ; 0 / 308 ( 0 % )                                 ;
+; Total DSP Blocks                ; 0 / 66 ( 0 % )                                  ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -153,17 +153,19 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.09        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.6%      ;
-;     Processor 3            ;   3.0%      ;
-;     Processor 4            ;   2.9%      ;
+;     Processor 2            ;   2.4%      ;
+;     Processor 3            ;   2.0%      ;
+;     Processor 4            ;   1.9%      ;
+;     Processor 5            ;   1.6%      ;
+;     Processor 6            ;   1.6%      ;
 +----------------------------+-------------+
 
 
@@ -176,30 +178,22 @@ refer to the applicable agreement for further details.
 ; MOUSE:inst5|inhibit_wait_count[11]                                         ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; MOUSE:inst5|inhibit_wait_count[11]~DUPLICATE ;                  ;                       ;
 ; VGA_SYNC:inst|h_count[0]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|h_count[0]~DUPLICATE           ;                  ;                       ;
 ; VGA_SYNC:inst|h_count[1]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|h_count[1]~DUPLICATE           ;                  ;                       ;
+; VGA_SYNC:inst|h_count[2]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|h_count[2]~DUPLICATE           ;                  ;                       ;
+; VGA_SYNC:inst|h_count[3]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|h_count[3]~DUPLICATE           ;                  ;                       ;
 ; VGA_SYNC:inst|h_count[4]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|h_count[4]~DUPLICATE           ;                  ;                       ;
-; VGA_SYNC:inst|h_count[6]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|h_count[6]~DUPLICATE           ;                  ;                       ;
-; VGA_SYNC:inst|pixel_column[0]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[0]~DUPLICATE      ;                  ;                       ;
-; VGA_SYNC:inst|pixel_column[1]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[1]~DUPLICATE      ;                  ;                       ;
+; VGA_SYNC:inst|h_count[7]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|h_count[7]~DUPLICATE           ;                  ;                       ;
 ; VGA_SYNC:inst|pixel_column[2]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[2]~DUPLICATE      ;                  ;                       ;
 ; VGA_SYNC:inst|pixel_column[3]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[3]~DUPLICATE      ;                  ;                       ;
-; VGA_SYNC:inst|pixel_column[4]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[4]~DUPLICATE      ;                  ;                       ;
 ; VGA_SYNC:inst|pixel_column[5]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[5]~DUPLICATE      ;                  ;                       ;
-; VGA_SYNC:inst|pixel_column[6]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[6]~DUPLICATE      ;                  ;                       ;
-; VGA_SYNC:inst|pixel_row[0]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[0]~DUPLICATE         ;                  ;                       ;
-; VGA_SYNC:inst|pixel_row[1]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[1]~DUPLICATE         ;                  ;                       ;
-; VGA_SYNC:inst|pixel_row[2]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[2]~DUPLICATE         ;                  ;                       ;
-; VGA_SYNC:inst|pixel_row[5]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[5]~DUPLICATE         ;                  ;                       ;
-; VGA_SYNC:inst|pixel_row[6]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[6]~DUPLICATE         ;                  ;                       ;
+; VGA_SYNC:inst|pixel_column[9]                                              ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_column[9]~DUPLICATE      ;                  ;                       ;
+; VGA_SYNC:inst|pixel_row[3]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[3]~DUPLICATE         ;                  ;                       ;
+; VGA_SYNC:inst|pixel_row[4]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[4]~DUPLICATE         ;                  ;                       ;
 ; VGA_SYNC:inst|pixel_row[7]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[7]~DUPLICATE         ;                  ;                       ;
-; VGA_SYNC:inst|pixel_row[8]                                                 ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|pixel_row[8]~DUPLICATE         ;                  ;                       ;
-; VGA_SYNC:inst|v_count[0]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|v_count[0]~DUPLICATE           ;                  ;                       ;
-; VGA_SYNC:inst|v_count[1]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|v_count[1]~DUPLICATE           ;                  ;                       ;
-; VGA_SYNC:inst|v_count[2]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|v_count[2]~DUPLICATE           ;                  ;                       ;
-; VGA_SYNC:inst|v_count[3]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|v_count[3]~DUPLICATE           ;                  ;                       ;
-; VGA_SYNC:inst|v_count[4]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|v_count[4]~DUPLICATE           ;                  ;                       ;
-; pipes:inst3|lfsr:lfsr_inst|reg[3]                                          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pipes:inst3|lfsr:lfsr_inst|reg[3]~DUPLICATE  ;                  ;                       ;
+; VGA_SYNC:inst|v_count[6]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|v_count[6]~DUPLICATE           ;                  ;                       ;
+; VGA_SYNC:inst|v_count[8]                                                   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; VGA_SYNC:inst|v_count[8]~DUPLICATE           ;                  ;                       ;
 ; pipes:inst3|lfsr:lfsr_inst|reg[4]                                          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pipes:inst3|lfsr:lfsr_inst|reg[4]~DUPLICATE  ;                  ;                       ;
-; pipes:inst3|lfsr:lfsr_inst|reg[13]                                         ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pipes:inst3|lfsr:lfsr_inst|reg[13]~DUPLICATE ;                  ;                       ;
+; pipes:inst3|lfsr:lfsr_inst|reg[6]                                          ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pipes:inst3|lfsr:lfsr_inst|reg[6]~DUPLICATE  ;                  ;                       ;
+; pipes:inst3|lfsr:lfsr_inst|reg[14]                                         ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pipes:inst3|lfsr:lfsr_inst|reg[14]~DUPLICATE ;                  ;                       ;
 +----------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+----------------------------------------------+------------------+-----------------------+
 
 
@@ -561,8 +555,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 2091 ) ; 0.00 % ( 0 / 2091 )        ; 0.00 % ( 0 / 2091 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 2091 ) ; 0.00 % ( 0 / 2091 )        ; 0.00 % ( 0 / 2091 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 2088 ) ; 0.00 % ( 0 / 2088 )        ; 0.00 % ( 0 / 2088 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 2088 ) ; 0.00 % ( 0 / 2088 )        ; 0.00 % ( 0 / 2088 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -585,7 +579,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 2084 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 2081 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 7 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -593,7 +587,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/COMPSYS 305/PROJECT/output_files/FlappyBird.pin.
+The pin-out file can be found in H:/Documents/GitHub/305-Mini-Project/PROJECT/output_files/FlappyBird.pin.
 
 
 +---------------------------------------------------------------------------------------------+
@@ -601,41 +595,41 @@ The pin-out file can be found in C:/COMPSYS 305/PROJECT/output_files/FlappyBird.
 +-------------------------------------------------------------+-----------------------+-------+
 ; Resource                                                    ; Usage                 ; %     ;
 +-------------------------------------------------------------+-----------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 899 / 18,480          ; 5 %   ;
-; ALMs needed [=A-B+C]                                        ; 899                   ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 931 / 18,480          ; 5 %   ;
-;         [a] ALMs used for LUT logic and registers           ; 119                   ;       ;
-;         [b] ALMs used for LUT logic                         ; 777                   ;       ;
-;         [c] ALMs used for registers                         ; 35                    ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 905 / 18,480          ; 5 %   ;
+; ALMs needed [=A-B+C]                                        ; 905                   ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 942 / 18,480          ; 5 %   ;
+;         [a] ALMs used for LUT logic and registers           ; 109                   ;       ;
+;         [b] ALMs used for LUT logic                         ; 789                   ;       ;
+;         [c] ALMs used for registers                         ; 44                    ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 35 / 18,480           ; < 1 % ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 3 / 18,480            ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 39 / 18,480           ; < 1 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 2 / 18,480            ; < 1 % ;
 ;         [a] Due to location constrained logic               ; 0                     ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ;       ;
-;         [c] Due to LAB input limits                         ; 3                     ;       ;
+;         [c] Due to LAB input limits                         ; 2                     ;       ;
 ;         [d] Due to virtual I/Os                             ; 0                     ;       ;
 ;                                                             ;                       ;       ;
 ; Difficulty packing design                                   ; Low                   ;       ;
 ;                                                             ;                       ;       ;
-; Total LABs:  partially or completely used                   ; 121 / 1,848           ; 7 %   ;
-;     -- Logic LABs                                           ; 121                   ;       ;
+; Total LABs:  partially or completely used                   ; 118 / 1,848           ; 6 %   ;
+;     -- Logic LABs                                           ; 118                   ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ;       ;
 ;                                                             ;                       ;       ;
-; Combinational ALUT usage for logic                          ; 1,710                 ;       ;
+; Combinational ALUT usage for logic                          ; 1,709                 ;       ;
 ;     -- 7 input functions                                    ; 1                     ;       ;
-;     -- 6 input functions                                    ; 87                    ;       ;
-;     -- 5 input functions                                    ; 74                    ;       ;
-;     -- 4 input functions                                    ; 446                   ;       ;
-;     -- <=3 input functions                                  ; 1,102                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 11                    ;       ;
+;     -- 6 input functions                                    ; 157                   ;       ;
+;     -- 5 input functions                                    ; 84                    ;       ;
+;     -- 4 input functions                                    ; 438                   ;       ;
+;     -- <=3 input functions                                  ; 1,029                 ;       ;
+; Combinational ALUT usage for route-throughs                 ; 14                    ;       ;
 ;                                                             ;                       ;       ;
-; Dedicated logic registers                                   ; 334                   ;       ;
+; Dedicated logic registers                                   ; 325                   ;       ;
 ;     -- By type:                                             ;                       ;       ;
-;         -- Primary logic registers                          ; 307 / 36,960          ; < 1 % ;
-;         -- Secondary logic registers                        ; 27 / 36,960           ; < 1 % ;
+;         -- Primary logic registers                          ; 305 / 36,960          ; < 1 % ;
+;         -- Secondary logic registers                        ; 20 / 36,960           ; < 1 % ;
 ;     -- By function:                                         ;                       ;       ;
-;         -- Design implementation registers                  ; 307                   ;       ;
-;         -- Routing optimization registers                   ; 27                    ;       ;
+;         -- Design implementation registers                  ; 306                   ;       ;
+;         -- Routing optimization registers                   ; 19                    ;       ;
 ;                                                             ;                       ;       ;
 ; Virtual pins                                                ; 0                     ;       ;
 ; I/O pins                                                    ; 34 / 224              ; 15 %  ;
@@ -661,12 +655,12 @@ The pin-out file can be found in C:/COMPSYS 305/PROJECT/output_files/FlappyBird.
 ; Remote update blocks                                        ; 0 / 1                 ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1                 ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3                 ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 2.6% / 2.6% / 2.4%    ;       ;
-; Peak interconnect usage (total/H/V)                         ; 23.2% / 23.5% / 22.1% ;       ;
-; Maximum fan-out                                             ; 198                   ;       ;
-; Highest non-global fan-out                                  ; 198                   ;       ;
-; Total fan-out                                               ; 6704                  ;       ;
-; Average fan-out                                             ; 3.15                  ;       ;
+; Average interconnect usage (total/H/V)                      ; 2.6% / 2.6% / 2.7%    ;       ;
+; Peak interconnect usage (total/H/V)                         ; 17.3% / 16.6% / 19.6% ;       ;
+; Maximum fan-out                                             ; 197                   ;       ;
+; Highest non-global fan-out                                  ; 197                   ;       ;
+; Total fan-out                                               ; 6922                  ;       ;
+; Average fan-out                                             ; 3.26                  ;       ;
 +-------------------------------------------------------------+-----------------------+-------+
 
 
@@ -675,44 +669,44 @@ The pin-out file can be found in C:/COMPSYS 305/PROJECT/output_files/FlappyBird.
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Statistic                                                   ; Top                   ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+-----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 899 / 18480 ( 5 % )   ; 0 / 18480 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 899                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 931 / 18480 ( 5 % )   ; 0 / 18480 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 119                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 777                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 35                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 905 / 18480 ( 5 % )   ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 905                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 942 / 18480 ( 5 % )   ; 0 / 18480 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 109                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 789                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 44                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 35 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 3 / 18480 ( < 1 % )   ; 0 / 18480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 39 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 2 / 18480 ( < 1 % )   ; 0 / 18480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
-;         [c] Due to LAB input limits                         ; 3                     ; 0                              ;
+;         [c] Due to LAB input limits                         ; 2                     ; 0                              ;
 ;         [d] Due to virtual I/Os                             ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 121 / 1848 ( 7 % )    ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 121                   ; 0                              ;
+; Total LABs:  partially or completely used                   ; 118 / 1848 ( 6 % )    ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 118                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 1710                  ; 0                              ;
+; Combinational ALUT usage for logic                          ; 1709                  ; 0                              ;
 ;     -- 7 input functions                                    ; 1                     ; 0                              ;
-;     -- 6 input functions                                    ; 87                    ; 0                              ;
-;     -- 5 input functions                                    ; 74                    ; 0                              ;
-;     -- 4 input functions                                    ; 446                   ; 0                              ;
-;     -- <=3 input functions                                  ; 1102                  ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 11                    ; 0                              ;
+;     -- 6 input functions                                    ; 157                   ; 0                              ;
+;     -- 5 input functions                                    ; 84                    ; 0                              ;
+;     -- 4 input functions                                    ; 438                   ; 0                              ;
+;     -- <=3 input functions                                  ; 1029                  ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 14                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 307 / 36960 ( < 1 % ) ; 0 / 36960 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 27 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
+;         -- Primary logic registers                          ; 305 / 36960 ( < 1 % ) ; 0 / 36960 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 20 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
-;         -- Design implementation registers                  ; 307                   ; 0                              ;
-;         -- Routing optimization registers                   ; 27                    ; 0                              ;
+;         -- Design implementation registers                  ; 306                   ; 0                              ;
+;         -- Routing optimization registers                   ; 19                    ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
@@ -727,18 +721,18 @@ The pin-out file can be found in C:/COMPSYS 305/PROJECT/output_files/FlappyBird.
 ; PLL Reference Clock Select Block                            ; 0 / 4 ( 0 % )         ; 1 / 4 ( 25 % )                 ;
 ;                                                             ;                       ;                                ;
 ; Connections                                                 ;                       ;                                ;
-;     -- Input Connections                                    ; 104                   ; 0                              ;
-;     -- Registered Input Connections                         ; 102                   ; 0                              ;
-;     -- Output Connections                                   ; 2                     ; 102                            ;
+;     -- Input Connections                                    ; 96                    ; 0                              ;
+;     -- Registered Input Connections                         ; 94                    ; 0                              ;
+;     -- Output Connections                                   ; 2                     ; 94                             ;
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 6703                  ; 134                            ;
-;     -- Registered Connections                               ; 1744                  ; 0                              ;
+;     -- Total Connections                                    ; 6921                  ; 126                            ;
+;     -- Registered Connections                               ; 1908                  ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
-;     -- Top                                                  ; 4                     ; 102                            ;
-;     -- hard_block:auto_generated_inst                       ; 102                   ; 0                              ;
+;     -- Top                                                  ; 4                     ; 94                             ;
+;     -- hard_block:auto_generated_inst                       ; 94                    ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Partition Interface                                         ;                       ;                                ;
 ;     -- Input Ports                                          ; 5                     ; 1                              ;
@@ -1418,27 +1412,27 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name         ; Library Name ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |FlappyBird                               ; 898.5 (1.0)          ; 930.0 (1.0)                      ; 34.5 (0.0)                                        ; 3.0 (0.0)                        ; 0.0 (0.0)            ; 1710 (2)            ; 334 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 34   ; 0            ; |FlappyBird                                                                                                             ; FlappyBird          ; work         ;
-;    |MOUSE:inst5|                          ; 27.5 (27.5)          ; 40.0 (40.0)                      ; 12.5 (12.5)                                       ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 51 (51)             ; 64 (64)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|MOUSE:inst5                                                                                                 ; MOUSE               ; work         ;
-;    |VGA_SYNC:inst|                        ; 28.2 (28.2)          ; 32.2 (32.2)                      ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 41 (41)             ; 71 (71)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|VGA_SYNC:inst                                                                                               ; VGA_SYNC            ; work         ;
-;    |collisions:inst12|                    ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|collisions:inst12                                                                                           ; collisions          ; work         ;
-;    |flappy_bird:inst1|                    ; 44.2 (44.2)          ; 52.7 (52.7)                      ; 9.1 (9.1)                                         ; 0.5 (0.5)                        ; 0.0 (0.0)            ; 78 (78)             ; 22 (22)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|flappy_bird:inst1                                                                                           ; flappy_bird         ; work         ;
-;    |pipes:inst3|                          ; 772.6 (193.8)        ; 776.6 (199.4)                    ; 6.4 (6.5)                                         ; 2.4 (0.9)                        ; 0.0 (0.0)            ; 1492 (334)          ; 164 (129)                 ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3                                                                                                 ; pipes               ; work         ;
-;       |lfsr:lfsr_inst|                    ; 16.4 (16.4)          ; 17.4 (17.4)                      ; 1.1 (1.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 35 (35)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lfsr:lfsr_inst                                                                                  ; lfsr                ; work         ;
-;       |lpm_divide:Mod0|                   ; 561.2 (0.0)          ; 559.7 (0.0)                      ; 0.0 (0.0)                                         ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1138 (0)            ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_45m:auto_generated|  ; 561.2 (0.0)          ; 559.7 (0.0)                      ; 0.0 (0.0)                                         ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1138 (0)            ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0|lpm_divide_45m:auto_generated                                                   ; lpm_divide_45m      ; work         ;
-;             |sign_div_unsign_7nh:divider| ; 561.2 (0.0)          ; 559.7 (0.0)                      ; 0.0 (0.0)                                         ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1138 (0)            ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_7nh:divider                       ; sign_div_unsign_7nh ; work         ;
-;                |alt_u_div_k2f:divider|    ; 561.2 (561.2)        ; 559.7 (559.7)                    ; 0.0 (0.0)                                         ; 1.5 (1.5)                        ; 0.0 (0.0)            ; 1138 (1138)         ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_k2f:divider ; alt_u_div_k2f       ; work         ;
+; |FlappyBird                               ; 904.5 (0.5)          ; 941.5 (0.5)                      ; 38.5 (0.0)                                        ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1709 (1)            ; 325 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 34   ; 0            ; |FlappyBird                                                                                                             ; FlappyBird          ; work         ;
+;    |MOUSE:inst5|                          ; 27.0 (27.0)          ; 40.0 (40.0)                      ; 13.0 (13.0)                                       ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 51 (51)             ; 64 (64)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|MOUSE:inst5                                                                                                 ; MOUSE               ; work         ;
+;    |VGA_SYNC:inst|                        ; 28.3 (28.3)          ; 31.3 (31.3)                      ; 3.0 (3.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 41 (41)             ; 63 (63)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|VGA_SYNC:inst                                                                                               ; VGA_SYNC            ; work         ;
+;    |flappy_bird:inst1|                    ; 42.8 (42.8)          ; 46.6 (46.6)                      ; 3.7 (3.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 74 (74)             ; 22 (22)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|flappy_bird:inst1                                                                                           ; flappy_bird         ; work         ;
+;    |pipes:inst3|                          ; 766.5 (187.9)        ; 782.4 (202.7)                    ; 17.4 (14.8)                                       ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1471 (313)          ; 164 (129)                 ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3                                                                                                 ; pipes               ; work         ;
+;       |lfsr:lfsr_inst|                    ; 16.7 (16.7)          ; 18.9 (18.9)                      ; 2.3 (2.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 35 (35)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lfsr:lfsr_inst                                                                                  ; lfsr                ; work         ;
+;       |lpm_divide:Mod0|                   ; 561.9 (0.0)          ; 560.8 (0.0)                      ; 0.3 (0.0)                                         ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1138 (0)            ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_45m:auto_generated|  ; 561.9 (0.0)          ; 560.8 (0.0)                      ; 0.3 (0.0)                                         ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1138 (0)            ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0|lpm_divide_45m:auto_generated                                                   ; lpm_divide_45m      ; work         ;
+;             |sign_div_unsign_7nh:divider| ; 561.9 (0.0)          ; 560.8 (0.0)                      ; 0.3 (0.0)                                         ; 1.5 (0.0)                        ; 0.0 (0.0)            ; 1138 (0)            ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_7nh:divider                       ; sign_div_unsign_7nh ; work         ;
+;                |alt_u_div_k2f:divider|    ; 561.9 (561.9)        ; 560.8 (560.8)                    ; 0.3 (0.3)                                         ; 1.5 (1.5)                        ; 0.0 (0.0)            ; 1138 (1138)         ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst3|lpm_divide:Mod0|lpm_divide_45m:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_k2f:divider ; alt_u_div_k2f       ; work         ;
 ;    |pll:inst2|                            ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2                                                                                                   ; pll                 ; pll          ;
 ;       |pll_0002:pll_inst|                 ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2|pll_0002:pll_inst                                                                                 ; pll_0002            ; pll          ;
 ;          |altera_pll:altera_pll_i|        ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i                                                         ; altera_pll          ; work         ;
-;    |scoreTracker:inst7|                   ; 23.6 (4.7)           ; 26.0 (4.6)                       ; 2.5 (0.0)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 44 (8)              ; 12 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7                                                                                          ; scoreTracker        ; work         ;
-;       |BCD_counter:counterMins|           ; 3.0 (3.0)            ; 5.3 (5.3)                        ; 2.3 (2.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterMins                                                                  ; BCD_counter         ; work         ;
-;       |BCD_counter:counterSec|            ; 2.3 (2.3)            ; 3.0 (3.0)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterSec                                                                   ; BCD_counter         ; work         ;
-;       |BCD_counter:counterTens|           ; 3.3 (3.3)            ; 4.4 (4.4)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterTens                                                                  ; BCD_counter         ; work         ;
-;       |BCD_to_7Seg:display1|              ; 2.7 (2.7)            ; 2.7 (2.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display1                                                                     ; BCD_to_7Seg         ; work         ;
+;    |renderer:inst8|                       ; 12.3 (12.3)          ; 12.8 (12.8)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 19 (19)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|renderer:inst8                                                                                              ; renderer            ; work         ;
+;    |scoreTracker:inst7|                   ; 27.0 (8.3)           ; 27.8 (8.8)                       ; 0.8 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 52 (16)             ; 12 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7                                                                                          ; scoreTracker        ; work         ;
+;       |BCD_counter:counterMins|           ; 2.5 (2.5)            ; 3.0 (3.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterMins                                                                  ; BCD_counter         ; work         ;
+;       |BCD_counter:counterSec|            ; 2.7 (2.7)            ; 3.0 (3.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterSec                                                                   ; BCD_counter         ; work         ;
+;       |BCD_counter:counterTens|           ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (5)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterTens                                                                  ; BCD_counter         ; work         ;
+;       |BCD_to_7Seg:display1|              ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display1                                                                     ; BCD_to_7Seg         ; work         ;
 ;       |BCD_to_7Seg:display2|              ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display2                                                                     ; BCD_to_7Seg         ; work         ;
-;       |BCD_to_7Seg:display3|              ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display3                                                                     ; BCD_to_7Seg         ; work         ;
+;       |BCD_to_7Seg:display3|              ; 3.3 (3.3)            ; 3.5 (3.5)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display3                                                                     ; BCD_to_7Seg         ; work         ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1478,7 +1472,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; VGA_G[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; VGA_R[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; PS2_DAT  ; Bidir    ; -- ; --   ; (0)  ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; PS2_CLK  ; Bidir    ; -- ; --   ; (0)  ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; PS2_CLK  ; Bidir    ; -- ; (0)  ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; CLOCK_50 ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[3]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[2]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1499,7 +1493,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MOUSE:inst5|iready_set~1          ; 1                 ; 0       ;
 ;      - MOUSE:inst5|SHIFTIN[8]            ; 1                 ; 0       ;
 ; PS2_CLK                                  ;                   ;         ;
-;      - MOUSE:inst5|filter[0]             ; 1                 ; 0       ;
+;      - MOUSE:inst5|filter[0]~feeder      ; 0                 ; 0       ;
 ; CLOCK_50                                 ;                   ;         ;
 ; KEY[3]                                   ;                   ;         ;
 ;      - flappy_bird:inst1|reset_behaviour ; 1                 ; 0       ;
@@ -1514,34 +1508,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------+---------------------------+---------+-----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                               ; Location                  ; Fan-Out ; Usage                       ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------------+---------------------------+---------+-----------------------------+--------+----------------------+------------------+---------------------------+
-; MOUSE:inst5|INCNT[3]~1                                             ; MLABCELL_X4_Y20_N24       ; 4       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|MOUSE_CLK_FILTER                                       ; FF_X5_Y20_N2              ; 36      ; Clock                       ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|MOUSE_DATA_BUF~0                                       ; LABCELL_X6_Y20_N27        ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|SHIFTIN[0]~0                                           ; MLABCELL_X4_Y20_N45       ; 9       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|WideOr4                                                ; LABCELL_X1_Y20_N36        ; 1       ; Output enable               ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|mouse_state.INHIBIT_TRANS                              ; FF_X1_Y20_N44             ; 18      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|mouse_state.WAIT_OUTPUT_READY                          ; FF_X5_Y20_N59             ; 14      ; Clock enable, Output enable ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|output_ready~0                                         ; LABCELL_X6_Y20_N18        ; 5       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; MOUSE:inst5|send_data                                              ; FF_X7_Y20_N56             ; 17      ; Async. clear                ; no     ; --                   ; --               ; --                        ;
-; VGA_SYNC:inst|Equal0~1                                             ; MLABCELL_X23_Y21_N51      ; 14      ; Sync. clear                 ; no     ; --                   ; --               ; --                        ;
-; VGA_SYNC:inst|LessThan6~0                                          ; LABCELL_X21_Y22_N9        ; 18      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; VGA_SYNC:inst|LessThan7~1                                          ; LABCELL_X21_Y22_N3        ; 17      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; VGA_SYNC:inst|process_0~7                                          ; LABCELL_X21_Y22_N24       ; 15      ; Sync. clear                 ; no     ; --                   ; --               ; --                        ;
-; VGA_SYNC:inst|v_count[2]~0                                         ; LABCELL_X21_Y22_N27       ; 15      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; VGA_SYNC:inst|vert_sync_out                                        ; FF_X19_Y18_N5             ; 198     ; Clock                       ; no     ; --                   ; --               ; --                        ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[9]~0                       ; LABCELL_X19_Y20_N0        ; 9       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; flappy_bird:inst1|gamePause                                        ; FF_X19_Y17_N29            ; 55      ; Async. clear, Sync. clear   ; no     ; --                   ; --               ; --                        ;
-; flappy_bird:inst1|reset_behaviour                                  ; FF_X19_Y20_N23            ; 32      ; Clock enable, Sync. clear   ; no     ; --                   ; --               ; --                        ;
-; pipes:inst3|\move_pipe:calculating3[0]~0                           ; LABCELL_X19_Y20_N45       ; 8       ; Sync. clear                 ; no     ; --                   ; --               ; --                        ;
-; pipes:inst3|pipe2_y_pos[2]~0                                       ; LABCELL_X19_Y18_N0        ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; pipes:inst3|pipe3_y_pos[2]~0                                       ; LABCELL_X26_Y18_N36       ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; pipes:inst3|pipe4_y_pos[2]~0                                       ; MLABCELL_X28_Y20_N21      ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; pipes:inst3|pipe_x_pos[2]~2                                        ; LABCELL_X19_Y18_N39       ; 88      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; pipes:inst3|pipe_y_pos[2]~0                                        ; LABCELL_X20_Y18_N42       ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y0_N1 ; 102     ; Clock                       ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; scoreTracker:inst7|BCD_counter:counterMins|counter[2]~0            ; LABCELL_X20_Y10_N36       ; 8       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; scoreTracker:inst7|BCD_counter:counterSec|counter[2]~1             ; LABCELL_X20_Y10_N0        ; 4       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
-; scoreTracker:inst7|BCD_counter:counterTens|counter[2]~0            ; LABCELL_X20_Y10_N3        ; 8       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|INCNT[3]~1                                             ; LABCELL_X7_Y20_N24        ; 4       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|MOUSE_CLK_FILTER                                       ; FF_X6_Y20_N44             ; 36      ; Clock                       ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|MOUSE_DATA_BUF~0                                       ; LABCELL_X5_Y20_N36        ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|SHIFTIN[0]~0                                           ; LABCELL_X7_Y20_N48        ; 9       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|WideOr4                                                ; MLABCELL_X4_Y20_N12       ; 1       ; Output enable               ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|mouse_state.INHIBIT_TRANS                              ; FF_X2_Y20_N41             ; 18      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|mouse_state.WAIT_OUTPUT_READY                          ; FF_X6_Y20_N47             ; 14      ; Clock enable, Output enable ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|output_ready~0                                         ; LABCELL_X5_Y20_N45        ; 5       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; MOUSE:inst5|send_data                                              ; FF_X4_Y20_N35             ; 17      ; Async. clear                ; no     ; --                   ; --               ; --                        ;
+; VGA_SYNC:inst|Equal0~1                                             ; LABCELL_X26_Y25_N39       ; 16      ; Sync. clear                 ; no     ; --                   ; --               ; --                        ;
+; VGA_SYNC:inst|LessThan6~0                                          ; LABCELL_X29_Y24_N42       ; 15      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; VGA_SYNC:inst|LessThan7~1                                          ; MLABCELL_X23_Y24_N27      ; 13      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; VGA_SYNC:inst|process_0~7                                          ; LABCELL_X31_Y22_N33       ; 12      ; Sync. clear                 ; no     ; --                   ; --               ; --                        ;
+; VGA_SYNC:inst|v_count[1]~0                                         ; LABCELL_X31_Y22_N30       ; 12      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; VGA_SYNC:inst|vert_sync_out                                        ; FF_X25_Y21_N26            ; 197     ; Clock                       ; no     ; --                   ; --               ; --                        ;
+; flappy_bird:inst1|gamePause                                        ; FF_X25_Y20_N53            ; 134     ; Async. clear, Sync. clear   ; no     ; --                   ; --               ; --                        ;
+; flappy_bird:inst1|reset_behaviour                                  ; FF_X25_Y20_N47            ; 122     ; Clock enable, Sync. clear   ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|\move_pipe:calculating3[10]~0                          ; LABCELL_X25_Y20_N33       ; 8       ; Sync. clear                 ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|pipe2_y_pos[2]~0                                       ; LABCELL_X25_Y20_N42       ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|pipe3_y_pos[2]~0                                       ; LABCELL_X25_Y20_N30       ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|pipe3_y_pos[6]~1                                       ; LABCELL_X16_Y20_N9        ; 2       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|pipe4_y_pos[2]~0                                       ; LABCELL_X25_Y20_N15       ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|pipe_x_pos[8]~1                                        ; LABCELL_X25_Y20_N12       ; 88      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|pipe_x_pos[8]~12                                       ; MLABCELL_X18_Y23_N21      ; 9       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; pipes:inst3|pipe_y_pos[2]~0                                        ; LABCELL_X25_Y20_N48       ; 10      ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y0_N1 ; 94      ; Clock                       ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; scoreTracker:inst7|BCD_counter:counterMins|counter[1]~1            ; LABCELL_X25_Y13_N57       ; 4       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; scoreTracker:inst7|BCD_counter:counterSec|counter[3]~0             ; LABCELL_X25_Y13_N45       ; 4       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
+; scoreTracker:inst7|BCD_counter:counterTens|counter[0]~1            ; LABCELL_X25_Y13_N15       ; 4       ; Clock enable                ; no     ; --                   ; --               ; --                        ;
 +--------------------------------------------------------------------+---------------------------+---------+-----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1550,7 +1545,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------+---------------------------+---------+----------------------+------------------+---------------------------+
 ; Name                                                               ; Location                  ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------------------------------------------+---------------------------+---------+----------------------+------------------+---------------------------+
-; pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y0_N1 ; 102     ; Global Clock         ; GCLK3            ; --                        ;
+; pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|outclk_wire[0] ; PLLOUTPUTCOUNTER_X0_Y0_N1 ; 94      ; Global Clock         ; GCLK3            ; --                        ;
 +--------------------------------------------------------------------+---------------------------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1559,22 +1554,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+-------------------------+
 ; Routing Resource Type        ; Usage                   ;
 +------------------------------+-------------------------+
-; Block interconnects          ; 3,203 / 140,056 ( 2 % ) ;
-; C12 interconnects            ; 64 / 6,048 ( 1 % )      ;
-; C2 interconnects             ; 1,289 / 54,648 ( 2 % )  ;
-; C4 interconnects             ; 743 / 25,920 ( 3 % )    ;
+; Block interconnects          ; 3,214 / 140,056 ( 2 % ) ;
+; C12 interconnects            ; 97 / 6,048 ( 2 % )      ;
+; C2 interconnects             ; 1,449 / 54,648 ( 3 % )  ;
+; C4 interconnects             ; 761 / 25,920 ( 3 % )    ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )          ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )          ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )          ;
-; Direct links                 ; 447 / 140,056 ( < 1 % ) ;
+; Direct links                 ; 390 / 140,056 ( < 1 % ) ;
 ; Global clocks                ; 1 / 16 ( 6 % )          ;
-; Local interconnects          ; 551 / 36,960 ( 1 % )    ;
+; Local interconnects          ; 588 / 36,960 ( 2 % )    ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )          ;
-; R14 interconnects            ; 328 / 5,984 ( 5 % )     ;
-; R14/C12 interconnect drivers ; 382 / 9,504 ( 4 % )     ;
-; R3 interconnects             ; 1,701 / 60,192 ( 3 % )  ;
-; R6 interconnects             ; 2,206 / 127,072 ( 2 % ) ;
-; Spine clocks                 ; 2 / 120 ( 2 % )         ;
+; R14 interconnects            ; 348 / 5,984 ( 6 % )     ;
+; R14/C12 interconnect drivers ; 430 / 9,504 ( 5 % )     ;
+; R3 interconnects             ; 1,807 / 60,192 ( 3 % )  ;
+; R6 interconnects             ; 2,595 / 127,072 ( 2 % ) ;
+; Spine clocks                 ; 4 / 120 ( 3 % )         ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )       ;
 +------------------------------+-------------------------+
 
@@ -1717,128 +1712,128 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                                                                                                                                             ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------+
-; Source Clock(s)                                                                                   ; Destination Clock(s)                                                                              ; Delay Added in ns ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------+
-; VGA_SYNC:inst|vert_sync_out                                                                       ; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk,VGA_SYNC:inst|vert_sync_out ; 394.4             ;
-; VGA_SYNC:inst|vert_sync_out                                                                       ; VGA_SYNC:inst|vert_sync_out                                                                       ; 370.6             ;
-; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk,VGA_SYNC:inst|vert_sync_out ; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk,VGA_SYNC:inst|vert_sync_out ; 107.7             ;
-; MOUSE:inst5|MOUSE_CLK_FILTER                                                                      ; MOUSE:inst5|MOUSE_CLK_FILTER                                                                      ; 52.2              ;
-; MOUSE:inst5|MOUSE_CLK_FILTER                                                                      ; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                             ; 26.4              ;
-; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                             ; VGA_SYNC:inst|vert_sync_out                                                                       ; 22.3              ;
-+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+-------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                                                                                                                 ;
++---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+; Source Clock(s)                                                                                   ; Destination Clock(s)                                                  ; Delay Added in ns ;
++---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
+; VGA_SYNC:inst|vert_sync_out                                                                       ; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 407.8             ;
+; VGA_SYNC:inst|vert_sync_out                                                                       ; VGA_SYNC:inst|vert_sync_out                                           ; 340.3             ;
+; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk,VGA_SYNC:inst|vert_sync_out ; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 123.1             ;
+; MOUSE:inst5|MOUSE_CLK_FILTER                                                                      ; MOUSE:inst5|MOUSE_CLK_FILTER                                          ; 46.0              ;
+; MOUSE:inst5|MOUSE_CLK_FILTER                                                                      ; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 27.7              ;
+; inst2|pll_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk                             ; VGA_SYNC:inst|vert_sync_out                                           ; 14.9              ;
++---------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                               ;
-+--------------------------------------------+--------------------------------------------+-------------------+
-; Source Register                            ; Destination Register                       ; Delay Added in ns ;
-+--------------------------------------------+--------------------------------------------+-------------------+
-; flappy_bird:inst1|\move_bird:bird_y_pos[0] ; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; 9.017             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[2] ; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; 9.001             ;
-; MOUSE:inst5|MOUSE_CLK_FILTER               ; MOUSE:inst5|MOUSE_CLK_FILTER               ; 8.390             ;
-; pipes:inst3|\move_pipe:calculating2[8]     ; VGA_SYNC:inst|blue_out                     ; 7.245             ;
-; MOUSE:inst5|iready_set                     ; MOUSE:inst5|mouse_state.WAIT_CMD_ACK       ; 7.243             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[3] ; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; 7.135             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[1] ; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; 7.107             ;
-; pipes:inst3|\move_pipe:calculating2[6]     ; VGA_SYNC:inst|blue_out                     ; 6.885             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; 6.834             ;
-; pipes:inst3|\move_pipe:calculating2[3]     ; VGA_SYNC:inst|blue_out                     ; 6.741             ;
-; pipes:inst3|pipe_y_pos[7]                  ; VGA_SYNC:inst|blue_out                     ; 6.672             ;
-; pipes:inst3|pipe_y_pos[6]                  ; VGA_SYNC:inst|blue_out                     ; 6.597             ;
-; MOUSE:inst5|output_ready                   ; MOUSE:inst5|mouse_state.WAIT_CMD_ACK       ; 6.535             ;
-; pipes:inst3|\move_pipe:calculating3[7]     ; VGA_SYNC:inst|blue_out                     ; 6.470             ;
-; pipes:inst3|\move_pipe:calculating3[8]     ; VGA_SYNC:inst|blue_out                     ; 6.409             ;
-; pipes:inst3|pipe_y_pos[8]                  ; VGA_SYNC:inst|blue_out                     ; 6.376             ;
-; pipes:inst3|pipe_y_pos[5]                  ; VGA_SYNC:inst|blue_out                     ; 6.371             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[8] ; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; 6.336             ;
-; pipes:inst3|pipe_y_pos[4]                  ; VGA_SYNC:inst|blue_out                     ; 6.296             ;
-; pipes:inst3|\move_pipe:calculating4[8]     ; VGA_SYNC:inst|blue_out                     ; 6.291             ;
-; pipes:inst3|\move_pipe:calculating3[4]     ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; pipes:inst3|\move_pipe:calculating3[3]     ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; pipes:inst3|\move_pipe:calculating3[2]     ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; pipes:inst3|\move_pipe:calculating3[1]     ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; pipes:inst3|\move_pipe:calculating3[0]     ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; VGA_SYNC:inst|pixel_column[2]              ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; VGA_SYNC:inst|pixel_column[1]              ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; VGA_SYNC:inst|pixel_column[0]              ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; VGA_SYNC:inst|pixel_column[4]              ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; VGA_SYNC:inst|pixel_column[3]              ; VGA_SYNC:inst|blue_out                     ; 6.274             ;
-; pipes:inst3|\move_pipe:calculating4[7]     ; VGA_SYNC:inst|blue_out                     ; 6.251             ;
-; pipes:inst3|\move_pipe:calculating3[6]     ; VGA_SYNC:inst|blue_out                     ; 6.232             ;
-; pipes:inst3|pipe_y_pos[3]                  ; VGA_SYNC:inst|blue_out                     ; 6.202             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[5] ; VGA_SYNC:inst|green_out                    ; 6.145             ;
-; pipes:inst3|pipe3_x_pos[0]                 ; pipes:inst3|\move_pipe:calculating3[4]     ; 6.106             ;
-; pipes:inst3|\move_pipe:calculating3[10]    ; VGA_SYNC:inst|blue_out                     ; 6.101             ;
-; pipes:inst3|pipe2_x_pos[9]                 ; VGA_SYNC:inst|blue_out                     ; 6.098             ;
-; pipes:inst3|pipe_y_pos[2]                  ; VGA_SYNC:inst|blue_out                     ; 6.090             ;
-; pipes:inst3|pipe2_x_pos[8]                 ; VGA_SYNC:inst|blue_out                     ; 6.088             ;
-; pipes:inst3|pipe4_x_pos[10]                ; VGA_SYNC:inst|blue_out                     ; 6.017             ;
-; pipes:inst3|\move_pipe:calculating3[5]     ; VGA_SYNC:inst|blue_out                     ; 6.000             ;
-; pipes:inst3|\move_pipe:calculating3[9]     ; VGA_SYNC:inst|blue_out                     ; 5.972             ;
-; pipes:inst3|\move_pipe:calculating1[8]     ; VGA_SYNC:inst|blue_out                     ; 5.959             ;
-; pipes:inst3|pipe3_x_pos[2]                 ; pipes:inst3|\move_pipe:calculating3[4]     ; 5.918             ;
-; pipes:inst3|pipe4_x_pos[8]                 ; VGA_SYNC:inst|blue_out                     ; 5.901             ;
-; pipes:inst3|pipe_x_pos[8]                  ; VGA_SYNC:inst|blue_out                     ; 5.901             ;
-; pipes:inst3|pipe_x_pos[10]                 ; VGA_SYNC:inst|blue_out                     ; 5.873             ;
-; pipes:inst3|pipe4_x_pos[9]                 ; VGA_SYNC:inst|blue_out                     ; 5.873             ;
-; pipes:inst3|\move_pipe:calculating2[7]     ; VGA_SYNC:inst|blue_out                     ; 5.862             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[7] ; VGA_SYNC:inst|red_out                      ; 5.855             ;
-; pipes:inst3|\move_pipe:calculating2[4]     ; VGA_SYNC:inst|blue_out                     ; 5.852             ;
-; flappy_bird:inst1|\move_bird:bird_y_pos[6] ; VGA_SYNC:inst|green_out                    ; 5.851             ;
-; pipes:inst3|\move_pipe:calculating4[9]     ; VGA_SYNC:inst|blue_out                     ; 5.833             ;
-; pipes:inst3|pipe2_x_pos[10]                ; VGA_SYNC:inst|blue_out                     ; 5.813             ;
-; pipes:inst3|pipe2_y_pos[7]                 ; VGA_SYNC:inst|blue_out                     ; 5.803             ;
-; pipes:inst3|\move_pipe:calculating4[10]    ; VGA_SYNC:inst|blue_out                     ; 5.785             ;
-; pipes:inst3|\move_pipe:calculating1[9]     ; VGA_SYNC:inst|blue_out                     ; 5.781             ;
-; pipes:inst3|pipe3_x_pos[8]                 ; VGA_SYNC:inst|blue_out                     ; 5.744             ;
-; pipes:inst3|pipe3_x_pos[10]                ; VGA_SYNC:inst|blue_out                     ; 5.739             ;
-; pipes:inst3|pipe3_x_pos[9]                 ; VGA_SYNC:inst|blue_out                     ; 5.735             ;
-; pipes:inst3|pipe2_x_pos[7]                 ; VGA_SYNC:inst|blue_out                     ; 5.724             ;
-; pipes:inst3|pipe4_y_pos[7]                 ; VGA_SYNC:inst|blue_out                     ; 5.724             ;
-; pipes:inst3|pipe_x_pos[1]                  ; pipes:inst3|\move_pipe:calculating1[8]     ; 5.700             ;
-; pipes:inst3|pipe3_y_pos[7]                 ; VGA_SYNC:inst|blue_out                     ; 5.700             ;
-; pipes:inst3|pipe3_y_pos[6]                 ; VGA_SYNC:inst|blue_out                     ; 5.700             ;
-; pipes:inst3|pipe3_y_pos[5]                 ; VGA_SYNC:inst|blue_out                     ; 5.700             ;
-; pipes:inst3|pipe3_y_pos[4]                 ; VGA_SYNC:inst|blue_out                     ; 5.700             ;
-; pipes:inst3|pipe3_y_pos[3]                 ; VGA_SYNC:inst|blue_out                     ; 5.700             ;
-; pipes:inst3|pipe3_y_pos[2]                 ; VGA_SYNC:inst|blue_out                     ; 5.700             ;
-; pipes:inst3|pipe3_y_pos[8]                 ; VGA_SYNC:inst|blue_out                     ; 5.700             ;
-; pipes:inst3|pipe4_x_pos[7]                 ; VGA_SYNC:inst|blue_out                     ; 5.694             ;
-; pipes:inst3|\move_pipe:calculating1[10]    ; VGA_SYNC:inst|blue_out                     ; 5.687             ;
-; pipes:inst3|pipe2_y_pos[6]                 ; VGA_SYNC:inst|blue_out                     ; 5.684             ;
-; pipes:inst3|pipe2_y_pos[5]                 ; VGA_SYNC:inst|blue_out                     ; 5.684             ;
-; pipes:inst3|pipe2_y_pos[4]                 ; VGA_SYNC:inst|blue_out                     ; 5.684             ;
-; pipes:inst3|pipe2_y_pos[3]                 ; VGA_SYNC:inst|blue_out                     ; 5.684             ;
-; pipes:inst3|pipe2_y_pos[2]                 ; VGA_SYNC:inst|blue_out                     ; 5.684             ;
-; pipes:inst3|\move_pipe:calculating1[6]     ; VGA_SYNC:inst|blue_out                     ; 5.682             ;
-; pipes:inst3|pipe2_y_pos[8]                 ; VGA_SYNC:inst|blue_out                     ; 5.681             ;
-; pipes:inst3|pipe3_y_pos[9]                 ; VGA_SYNC:inst|blue_out                     ; 5.677             ;
-; pipes:inst3|\move_pipe:calculating2[1]     ; VGA_SYNC:inst|blue_out                     ; 5.665             ;
-; pipes:inst3|pipe2_y_pos[9]                 ; VGA_SYNC:inst|blue_out                     ; 5.659             ;
-; pipes:inst3|pipe_x_pos[9]                  ; VGA_SYNC:inst|blue_out                     ; 5.640             ;
-; pipes:inst3|pipe4_y_pos[9]                 ; VGA_SYNC:inst|blue_out                     ; 5.631             ;
-; pipes:inst3|\move_pipe:calculating1[5]     ; VGA_SYNC:inst|blue_out                     ; 5.630             ;
-; pipes:inst3|pipe3_x_pos[5]                 ; VGA_SYNC:inst|blue_out                     ; 5.609             ;
-; pipes:inst3|pipe_x_pos[7]                  ; pipes:inst3|\move_pipe:calculating1[8]     ; 5.572             ;
-; pipes:inst3|pipe4_y_pos[8]                 ; VGA_SYNC:inst|blue_out                     ; 5.547             ;
-; pipes:inst3|\move_pipe:calculating4[5]     ; VGA_SYNC:inst|blue_out                     ; 5.545             ;
-; pipes:inst3|pipe_x_pos[6]                  ; VGA_SYNC:inst|blue_out                     ; 5.538             ;
-; pipes:inst3|\move_pipe:calculating2[9]     ; VGA_SYNC:inst|blue_out                     ; 5.507             ;
-; pipes:inst3|\move_pipe:calculating2[5]     ; VGA_SYNC:inst|blue_out                     ; 5.506             ;
-; pipes:inst3|pipe2_x_pos[2]                 ; pipes:inst3|\move_pipe:calculating2[7]     ; 5.506             ;
-; pipes:inst3|\move_pipe:calculating1[7]     ; VGA_SYNC:inst|blue_out                     ; 5.503             ;
-; pipes:inst3|\move_pipe:calculating1[3]     ; VGA_SYNC:inst|blue_out                     ; 5.484             ;
-; pipes:inst3|pipe3_x_pos[6]                 ; VGA_SYNC:inst|blue_out                     ; 5.478             ;
-; pipes:inst3|pipe2_x_pos[6]                 ; VGA_SYNC:inst|blue_out                     ; 5.472             ;
-; pipes:inst3|pipe4_y_pos[5]                 ; VGA_SYNC:inst|blue_out                     ; 5.462             ;
-; pipes:inst3|pipe4_y_pos[6]                 ; VGA_SYNC:inst|blue_out                     ; 5.451             ;
-; pipes:inst3|pipe_y_pos[9]                  ; VGA_SYNC:inst|blue_out                     ; 5.441             ;
-+--------------------------------------------+--------------------------------------------+-------------------+
++-------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                         ;
++--------------------------------------------+--------------------------------------+-------------------+
+; Source Register                            ; Destination Register                 ; Delay Added in ns ;
++--------------------------------------------+--------------------------------------+-------------------+
+; MOUSE:inst5|MOUSE_CLK_FILTER               ; MOUSE:inst5|MOUSE_CLK_FILTER         ; 8.580             ;
+; MOUSE:inst5|output_ready                   ; MOUSE:inst5|mouse_state.WAIT_CMD_ACK ; 7.298             ;
+; MOUSE:inst5|iready_set                     ; MOUSE:inst5|mouse_state.WAIT_CMD_ACK ; 7.063             ;
+; pipes:inst3|pipe3_y_pos[9]                 ; VGA_SYNC:inst|green_out              ; 6.494             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[8] ; VGA_SYNC:inst|red_out                ; 6.449             ;
+; pipes:inst3|pipe3_y_pos[8]                 ; VGA_SYNC:inst|green_out              ; 6.439             ;
+; pipes:inst3|pipe2_y_pos[6]                 ; VGA_SYNC:inst|green_out              ; 6.415             ;
+; pipes:inst3|pipe2_x_pos[8]                 ; VGA_SYNC:inst|green_out              ; 6.394             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[7] ; VGA_SYNC:inst|red_out                ; 6.384             ;
+; pipes:inst3|pipe_x_pos[10]                 ; VGA_SYNC:inst|green_out              ; 6.376             ;
+; pipes:inst3|pipe2_y_pos[5]                 ; VGA_SYNC:inst|green_out              ; 6.373             ;
+; pipes:inst3|pipe4_y_pos[9]                 ; VGA_SYNC:inst|green_out              ; 6.339             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[3] ; VGA_SYNC:inst|blue_out               ; 6.328             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[6] ; VGA_SYNC:inst|blue_out               ; 6.310             ;
+; pipes:inst3|pipe_y_pos[5]                  ; VGA_SYNC:inst|green_out              ; 6.292             ;
+; pipes:inst3|pipe4_y_pos[8]                 ; VGA_SYNC:inst|green_out              ; 6.282             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[4] ; VGA_SYNC:inst|blue_out               ; 6.278             ;
+; pipes:inst3|pipe2_y_pos[8]                 ; VGA_SYNC:inst|green_out              ; 6.251             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[5] ; VGA_SYNC:inst|blue_out               ; 6.248             ;
+; pipes:inst3|pipe3_y_pos[7]                 ; VGA_SYNC:inst|green_out              ; 6.247             ;
+; pipes:inst3|pipe3_y_pos[6]                 ; VGA_SYNC:inst|green_out              ; 6.247             ;
+; pipes:inst3|pipe2_x_pos[10]                ; VGA_SYNC:inst|green_out              ; 6.093             ;
+; pipes:inst3|pipe3_y_pos[5]                 ; VGA_SYNC:inst|green_out              ; 6.088             ;
+; pipes:inst3|pipe2_x_pos[9]                 ; VGA_SYNC:inst|green_out              ; 6.061             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[2] ; VGA_SYNC:inst|red_out                ; 6.040             ;
+; pipes:inst3|pipe2_y_pos[2]                 ; VGA_SYNC:inst|green_out              ; 6.034             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[1] ; VGA_SYNC:inst|red_out                ; 6.002             ;
+; pipes:inst3|\move_pipe:calculating3[9]     ; VGA_SYNC:inst|green_out              ; 5.950             ;
+; pipes:inst3|pipe2_y_pos[1]                 ; VGA_SYNC:inst|green_out              ; 5.945             ;
+; pipes:inst3|pipe2_y_pos[0]                 ; VGA_SYNC:inst|green_out              ; 5.941             ;
+; pipes:inst3|pipe2_y_pos[7]                 ; VGA_SYNC:inst|green_out              ; 5.939             ;
+; pipes:inst3|pipe3_y_pos[3]                 ; VGA_SYNC:inst|green_out              ; 5.938             ;
+; pipes:inst3|pipe3_y_pos[4]                 ; VGA_SYNC:inst|green_out              ; 5.932             ;
+; pipes:inst3|pipe_y_pos[7]                  ; VGA_SYNC:inst|green_out              ; 5.917             ;
+; pipes:inst3|pipe_x_pos[6]                  ; VGA_SYNC:inst|green_out              ; 5.905             ;
+; pipes:inst3|pipe_y_pos[4]                  ; VGA_SYNC:inst|green_out              ; 5.865             ;
+; pipes:inst3|pipe2_x_pos[7]                 ; VGA_SYNC:inst|green_out              ; 5.859             ;
+; pipes:inst3|pipe2_y_pos[9]                 ; VGA_SYNC:inst|green_out              ; 5.846             ;
+; pipes:inst3|pipe2_x_pos[6]                 ; VGA_SYNC:inst|green_out              ; 5.819             ;
+; pipes:inst3|pipe4_x_pos[8]                 ; VGA_SYNC:inst|green_out              ; 5.802             ;
+; pipes:inst3|pipe2_y_pos[4]                 ; VGA_SYNC:inst|green_out              ; 5.802             ;
+; pipes:inst3|pipe2_y_pos[3]                 ; VGA_SYNC:inst|green_out              ; 5.788             ;
+; pipes:inst3|pipe_x_pos[5]                  ; VGA_SYNC:inst|green_out              ; 5.782             ;
+; pipes:inst3|pipe_y_pos[1]                  ; VGA_SYNC:inst|green_out              ; 5.768             ;
+; pipes:inst3|pipe2_x_pos[5]                 ; VGA_SYNC:inst|green_out              ; 5.750             ;
+; pipes:inst3|\move_pipe:calculating2[8]     ; VGA_SYNC:inst|green_out              ; 5.744             ;
+; pipes:inst3|pipe4_y_pos[7]                 ; VGA_SYNC:inst|green_out              ; 5.740             ;
+; pipes:inst3|pipe4_y_pos[6]                 ; VGA_SYNC:inst|green_out              ; 5.731             ;
+; pipes:inst3|pipe_y_pos[8]                  ; VGA_SYNC:inst|green_out              ; 5.728             ;
+; pipes:inst3|\move_pipe:calculating2[7]     ; VGA_SYNC:inst|green_out              ; 5.710             ;
+; pipes:inst3|pipe_y_pos[3]                  ; VGA_SYNC:inst|green_out              ; 5.709             ;
+; pipes:inst3|pipe3_y_pos[2]                 ; VGA_SYNC:inst|green_out              ; 5.704             ;
+; pipes:inst3|pipe_y_pos[2]                  ; VGA_SYNC:inst|green_out              ; 5.704             ;
+; pipes:inst3|pipe_y_pos[6]                  ; VGA_SYNC:inst|green_out              ; 5.663             ;
+; pipes:inst3|pipe_y_pos[0]                  ; VGA_SYNC:inst|green_out              ; 5.645             ;
+; pipes:inst3|pipe_x_pos[9]                  ; VGA_SYNC:inst|green_out              ; 5.634             ;
+; pipes:inst3|pipe_x_pos[8]                  ; VGA_SYNC:inst|green_out              ; 5.634             ;
+; pipes:inst3|pipe_x_pos[3]                  ; VGA_SYNC:inst|green_out              ; 5.628             ;
+; pipes:inst3|pipe4_x_pos[7]                 ; VGA_SYNC:inst|green_out              ; 5.616             ;
+; pipes:inst3|\move_pipe:calculating4[10]    ; VGA_SYNC:inst|green_out              ; 5.613             ;
+; MOUSE:inst5|left_button                    ; flappy_bird:inst1|gamePause          ; 5.612             ;
+; pipes:inst3|pipe4_x_pos[6]                 ; VGA_SYNC:inst|green_out              ; 5.599             ;
+; flappy_bird:inst1|\move_bird:bird_y_pos[0] ; VGA_SYNC:inst|red_out                ; 5.598             ;
+; pipes:inst3|pipe_x_pos[4]                  ; VGA_SYNC:inst|green_out              ; 5.596             ;
+; pipes:inst3|pipe2_x_pos[3]                 ; VGA_SYNC:inst|green_out              ; 5.596             ;
+; pipes:inst3|\move_pipe:calculating2[10]    ; VGA_SYNC:inst|green_out              ; 5.591             ;
+; pipes:inst3|\move_pipe:calculating4[9]     ; VGA_SYNC:inst|green_out              ; 5.520             ;
+; pipes:inst3|pipe_x_pos[7]                  ; VGA_SYNC:inst|green_out              ; 5.511             ;
+; pipes:inst3|\move_pipe:calculating4[8]     ; VGA_SYNC:inst|green_out              ; 5.503             ;
+; pipes:inst3|pipe4_y_pos[4]                 ; VGA_SYNC:inst|green_out              ; 5.495             ;
+; pipes:inst3|pipe2_x_pos[4]                 ; VGA_SYNC:inst|green_out              ; 5.487             ;
+; pipes:inst3|\move_pipe:calculating2[6]     ; VGA_SYNC:inst|green_out              ; 5.450             ;
+; pipes:inst3|\move_pipe:calculating2[5]     ; VGA_SYNC:inst|green_out              ; 5.442             ;
+; pipes:inst3|pipe4_y_pos[3]                 ; VGA_SYNC:inst|green_out              ; 5.425             ;
+; pipes:inst3|pipe4_y_pos[5]                 ; VGA_SYNC:inst|green_out              ; 5.424             ;
+; pipes:inst3|\move_pipe:calculating1[6]     ; VGA_SYNC:inst|green_out              ; 5.407             ;
+; pipes:inst3|\move_pipe:calculating1[7]     ; VGA_SYNC:inst|green_out              ; 5.405             ;
+; pipes:inst3|pipe3_x_pos[9]                 ; VGA_SYNC:inst|green_out              ; 5.353             ;
+; pipes:inst3|pipe3_x_pos[8]                 ; VGA_SYNC:inst|green_out              ; 5.352             ;
+; pipes:inst3|pipe4_x_pos[10]                ; VGA_SYNC:inst|green_out              ; 5.350             ;
+; pipes:inst3|pipe2_x_pos[2]                 ; VGA_SYNC:inst|green_out              ; 5.322             ;
+; pipes:inst3|\move_pipe:calculating3[4]     ; VGA_SYNC:inst|green_out              ; 5.317             ;
+; pipes:inst3|pipe2_x_pos[1]                 ; VGA_SYNC:inst|green_out              ; 5.297             ;
+; pipes:inst3|\move_pipe:calculating2[4]     ; VGA_SYNC:inst|green_out              ; 5.275             ;
+; pipes:inst3|\move_pipe:calculating2[3]     ; VGA_SYNC:inst|green_out              ; 5.275             ;
+; pipes:inst3|pipe4_x_pos[9]                 ; VGA_SYNC:inst|green_out              ; 5.261             ;
+; pipes:inst3|\move_pipe:calculating3[3]     ; VGA_SYNC:inst|green_out              ; 5.253             ;
+; VGA_SYNC:inst|pixel_row[2]                 ; VGA_SYNC:inst|green_out              ; 5.248             ;
+; VGA_SYNC:inst|pixel_row[1]                 ; VGA_SYNC:inst|green_out              ; 5.248             ;
+; VGA_SYNC:inst|pixel_row[0]                 ; VGA_SYNC:inst|green_out              ; 5.248             ;
+; pipes:inst3|pipe3_y_pos[1]                 ; VGA_SYNC:inst|green_out              ; 5.243             ;
+; pipes:inst3|pipe2_x_pos[0]                 ; VGA_SYNC:inst|green_out              ; 5.240             ;
+; pipes:inst3|\move_pipe:calculating2[2]     ; VGA_SYNC:inst|green_out              ; 5.226             ;
+; pipes:inst3|pipe_y_pos[9]                  ; VGA_SYNC:inst|green_out              ; 5.223             ;
+; pipes:inst3|pipe3_y_pos[0]                 ; VGA_SYNC:inst|green_out              ; 5.217             ;
+; pipes:inst3|\move_pipe:calculating1[5]     ; VGA_SYNC:inst|green_out              ; 5.181             ;
+; pipes:inst3|pipe4_y_pos[2]                 ; VGA_SYNC:inst|green_out              ; 5.163             ;
+; pipes:inst3|\move_pipe:calculating4[7]     ; VGA_SYNC:inst|green_out              ; 5.159             ;
+; VGA_SYNC:inst|pixel_row[5]                 ; VGA_SYNC:inst|blue_out               ; 5.154             ;
+; pipes:inst3|\move_pipe:calculating4[6]     ; VGA_SYNC:inst|green_out              ; 5.147             ;
++--------------------------------------------+--------------------------------------+-------------------+
 Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
 
@@ -1846,15 +1841,14 @@ Note: This table only shows the top 100 path(s) that have the largest delay adde
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (119006): Selected device 5CEBA4F23C7 for design "FlappyBird"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning: RST port on the PLL is not properly connected on instance pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
+Warning: RST port on the PLL is not properly connected on instance pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
 Warning (21300): LOCKED port on the PLL is not properly connected on instance "pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll". The LOCKED port on the PLL should be connected when the FBOUTCLK port is connected. Although it is unnecessary to connect the LOCKED signal, any logic driven off of an output clock of the PLL will not know when the PLL is locked and ready.
 Info (171004): Fitter is performing a Standard Fit compilation using maximum Fitter effort to optimize design performance
-Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Critical Warning (11114): Active serial configuration mode is selected with the INIT_DONE pin disabled. Depending on the configuration setup and board design, the INIT_DONE pin may need to be enabled in the design. For more information, refer to the Intel FPGA Knowledge Database solution number rd05092012_239
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (184020): Starting Fitter periphery placement operations
@@ -2056,35 +2050,35 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:12
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 19% of the available device resources in the region that extends from location X11_Y11 to location X21_Y22
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:31
-Info (11888): Total time spent on timing analysis during the Fitter is 2.13 seconds.
+    Info (170196): Router estimated peak interconnect usage is 14% of the available device resources in the region that extends from location X22_Y11 to location X32_Y22
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:24
+Info (11888): Total time spent on timing analysis during the Fitter is 2.28 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/COMPSYS 305/PROJECT/output_files/FlappyBird.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 181 warnings
-    Info: Peak virtual memory: 6379 megabytes
-    Info: Processing ended: Wed May 24 23:51:55 2023
-    Info: Elapsed time: 00:00:54
-    Info: Total CPU time (on all processors): 00:00:52
+Info (144001): Generated suppressed messages file H:/Documents/GitHub/305-Mini-Project/PROJECT/output_files/FlappyBird.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 180 warnings
+    Info: Peak virtual memory: 6640 megabytes
+    Info: Processing ended: Thu May 25 20:51:07 2023
+    Info: Elapsed time: 00:01:13
+    Info: Total CPU time (on all processors): 00:02:49
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/COMPSYS 305/PROJECT/output_files/FlappyBird.fit.smsg.
+The suppressed messages can be found in H:/Documents/GitHub/305-Mini-Project/PROJECT/output_files/FlappyBird.fit.smsg.
 
 

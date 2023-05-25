@@ -1,0 +1,574 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.2 2020.04, Apr 19 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modeltech_2020.2/examples
+Eball
+Z0 w1684985277
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z5 dH:/Documents/GitHub/305-Mini-Project
+Z6 8H:/Documents/GitHub/305-Mini-Project/PROJECT/ball.vhd
+Z7 FH:/Documents/GitHub/305-Mini-Project/PROJECT/ball.vhd
+l0
+L7 1
+VeEYc14]Wc?[h@A9^FX7<N1
+!s100 fdMF<]MXgTi@W1[amE0z=0
+Z8 OE;C;2020.2;71
+32
+Z9 !s110 1685004068
+!i10b 1
+Z10 !s108 1685004067.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/ball.vhd|
+Z12 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/ball.vhd|
+!i113 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 4 ball 0 22 eEYc14]Wc?[h@A9^FX7<N1
+!i122 0
+l20
+L14 27
+V0TRORNPLSWCj9RI@ag;i`3
+!s100 BYZ^=>5I:UaP0>mlXSR^U3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ebcd_counter
+R0
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R1
+R3
+R4
+!i122 1
+R5
+Z16 8H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_counter.vhd
+Z17 FH:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_counter.vhd
+l0
+L6 1
+VEmHdhiR]Lz>]bFGT7TVWd1
+!s100 KZhd>ITNWmJJ2KZ<7OnJ82
+R8
+32
+R9
+!i10b 1
+Z18 !s108 1685004068.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_counter.vhd|
+Z20 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_counter.vhd|
+!i113 0
+R13
+R14
+Acounting
+R15
+R2
+R1
+R3
+R4
+DEx4 work 11 bcd_counter 0 22 EmHdhiR]Lz>]bFGT7TVWd1
+!i122 1
+l14
+L12 31
+Vj_T;iX>LeEiLG6VdFInl:0
+!s100 1?W:1bGbZYN:S_E>H3co@3
+R8
+32
+R9
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R13
+R14
+Ebcd_to_7seg
+R0
+R3
+R4
+!i122 2
+R5
+Z21 8H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_to_7Seg.vhd
+Z22 FH:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_to_7Seg.vhd
+l0
+L7 1
+VQa:OSm=:nF>iDlTkfVhC=2
+!s100 gWf3hb?0nP;Q:=?1X?mEK0
+R8
+32
+R9
+!i10b 1
+R18
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_to_7Seg.vhd|
+Z24 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/BCD_to_7Seg.vhd|
+!i113 0
+R13
+R14
+Aarc1
+R3
+R4
+DEx4 work 11 bcd_to_7seg 0 22 Qa:OSm=:nF>iDlTkfVhC=2
+!i122 2
+l13
+L12 14
+V8diF4:B6YVCAQKO;=:HI90
+!s100 Z[`l^ULhln0kPmNfidAf_3
+R8
+32
+R9
+!i10b 1
+R18
+R23
+R24
+!i113 0
+R13
+R14
+Ecollisions
+R0
+R2
+R1
+R3
+R4
+!i122 3
+R5
+Z25 8H:/Documents/GitHub/305-Mini-Project/PROJECT/collisions.vhd
+Z26 FH:/Documents/GitHub/305-Mini-Project/PROJECT/collisions.vhd
+l0
+L6 1
+Vjbi8_LS2o9Dc2PFDdD7_f1
+!s100 0V8hm^fhF8`>Kg9XEPKY22
+R8
+32
+Z27 !s110 1685004069
+!i10b 1
+Z28 !s108 1685004069.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/collisions.vhd|
+Z30 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/collisions.vhd|
+!i113 0
+R13
+R14
+Abehaviour
+R2
+R1
+R3
+R4
+DEx4 work 10 collisions 0 22 jbi8_LS2o9Dc2PFDdD7_f1
+!i122 3
+l13
+L11 29
+V^PcARn>7:[Lm?ClzDzCPd3
+!s100 7SJ3F;FboOa=:aNE>Y:ZZ3
+R8
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 0
+R13
+R14
+vDE0_CV_golden_top
+R27
+!i10b 1
+!s100 ccCG6`?1Lgb?PO`BGSl3a0
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IMH^FcoFDNJ=@7Enh<kCN52
+VDg1SIo80bB@j0V0VzS_@n1
+R5
+R0
+8H:/Documents/GitHub/305-Mini-Project/PROJECT/DE0_CV_golden_top.v
+FH:/Documents/GitHub/305-Mini-Project/PROJECT/DE0_CV_golden_top.v
+!i122 4
+L0 54 102
+OE;L;2020.2;71
+r1
+!s85 0
+31
+R28
+!s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/DE0_CV_golden_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/DE0_CV_golden_top.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
+n@d@e0_@c@v_golden_top
+Eflappy_bird
+R0
+R2
+R1
+R3
+R4
+!i122 5
+R5
+Z31 8H:/Documents/GitHub/305-Mini-Project/PROJECT/flappy_bird.vhd
+Z32 FH:/Documents/GitHub/305-Mini-Project/PROJECT/flappy_bird.vhd
+l0
+L7 1
+VD:eCga`PQHhnZ7BBh_ASU1
+!s100 gg^zV;eKV5cAOQ<7Zf>i81
+R8
+32
+Z33 !s110 1685004070
+!i10b 1
+Z34 !s108 1685004070.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/flappy_bird.vhd|
+Z36 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/flappy_bird.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R2
+R1
+R3
+R4
+DEx4 work 11 flappy_bird 0 22 D:eCga`PQHhnZ7BBh_ASU1
+!i122 5
+l30
+L17 96
+Vad6@;6]MN]:fEkAYTTlTA1
+!s100 STYSKi8;bzlH_46W1R3TH2
+R8
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 0
+R13
+R14
+Elfsr
+R0
+R15
+R3
+R4
+!i122 6
+R5
+Z37 8H:/Documents/GitHub/305-Mini-Project/PROJECT/LFSR.vhd
+Z38 FH:/Documents/GitHub/305-Mini-Project/PROJECT/LFSR.vhd
+l0
+L5 1
+VZQR6?<LiENCeX_R>n[nan3
+!s100 @n`3O=4o_L@FLK48nVZ_20
+R8
+32
+R33
+!i10b 1
+R34
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/LFSR.vhd|
+Z40 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/LFSR.vhd|
+!i113 0
+R13
+R14
+Artl
+R15
+R3
+R4
+DEx4 work 4 lfsr 0 22 ZQR6?<LiENCeX_R>n[nan3
+!i122 6
+l19
+L17 18
+VV@_jTzNBAJZm2QO2CdOoJ1
+!s100 Jic;1Y=XjIP6o:eAG;3Z[3
+R8
+32
+R33
+!i10b 1
+R34
+R39
+R40
+!i113 0
+R13
+R14
+Emouse
+R0
+R1
+R2
+R3
+R4
+!i122 7
+R5
+Z41 8H:/Documents/GitHub/305-Mini-Project/PROJECT/mouse.vhd
+Z42 FH:/Documents/GitHub/305-Mini-Project/PROJECT/mouse.vhd
+l0
+L9 1
+V=Ph3GSn^@YBhjTX65@gaR3
+!s100 NW:2PZGF>]B=@dDA=NGMT0
+R8
+32
+R33
+!i10b 1
+R34
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/mouse.vhd|
+Z44 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/mouse.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 5 mouse 0 22 =Ph3GSn^@YBhjTX65@gaR3
+!i122 7
+l44
+L18 256
+V[lS:;mYz8AA;9NBFoo5252
+!s100 zCU_b4jngd_4lC86n0`7F0
+R8
+32
+R33
+!i10b 1
+R34
+R43
+R44
+!i113 0
+R13
+R14
+Epipes
+Z45 w1685003854
+R15
+R1
+R2
+R3
+R4
+!i122 8
+R5
+Z46 8H:/Documents/GitHub/305-Mini-Project/PROJECT/pipes.vhd
+Z47 FH:/Documents/GitHub/305-Mini-Project/PROJECT/pipes.vhd
+l0
+L8 1
+VbNNCNB5FSYjeK^[3T>2>52
+!s100 HXQ9k2<FDaSWlOF=5jfak2
+R8
+32
+Z48 !s110 1685004071
+!i10b 1
+R34
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/pipes.vhd|
+Z50 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/pipes.vhd|
+!i113 0
+R13
+R14
+Abehavior
+R15
+R1
+R2
+R3
+R4
+DEx4 work 5 pipes 0 22 bNNCNB5FSYjeK^[3T>2>52
+!i122 8
+l52
+L18 175
+V59oz<D6E_TcHSUTKg78lU0
+!s100 KFL:e_Q8Cid3_PkLL9fAI2
+R8
+32
+R48
+!i10b 1
+R34
+R49
+R50
+!i113 0
+R13
+R14
+Epll
+R0
+R15
+R3
+R4
+!i122 9
+R5
+Z51 8H:/Documents/GitHub/305-Mini-Project/PROJECT/pll.vhd
+Z52 FH:/Documents/GitHub/305-Mini-Project/PROJECT/pll.vhd
+l0
+L11 1
+VB>O8:;X4O9`V`GLhhGWeQ2
+!s100 6I1Rnf9of>aG[Vce;K0R71
+R8
+32
+R48
+!i10b 1
+Z53 !s108 1685004071.000000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/pll.vhd|
+Z55 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/pll.vhd|
+!i113 0
+R13
+R14
+Artl
+R15
+R3
+R4
+DEx4 work 3 pll 0 22 B>O8:;X4O9`V`GLhhGWeQ2
+!i122 9
+l30
+L20 21
+V^;f]Nl9gEFnCm_D2HP`K?2
+!s100 >CeJ?SAKPhOe:n]2D]WEf1
+R8
+32
+R48
+!i10b 1
+R53
+R54
+R55
+!i113 0
+R13
+R14
+Erenderer
+Z56 w1685003894
+R2
+R1
+R3
+R4
+!i122 10
+R5
+Z57 8H:/Documents/GitHub/305-Mini-Project/PROJECT/renderer.vhd
+Z58 FH:/Documents/GitHub/305-Mini-Project/PROJECT/renderer.vhd
+l0
+L6 1
+VLjVH2JFc27g@`6j@o1[_>3
+!s100 AJR^FfHl<`ZooaAXBcJ;>1
+R8
+32
+R48
+!i10b 1
+R53
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/renderer.vhd|
+Z60 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/renderer.vhd|
+!i113 0
+R13
+R14
+Abehaviour
+R2
+R1
+R3
+R4
+DEx4 work 8 renderer 0 22 LjVH2JFc27g@`6j@o1[_>3
+!i122 10
+l14
+L13 32
+VAU4jZIQn<M<VZ8@P6AndY0
+!s100 b3]kCZJBhfBg`jzTZnnkm3
+R8
+32
+R48
+!i10b 1
+R53
+R59
+R60
+!i113 0
+R13
+R14
+Escoretracker
+R0
+R15
+R2
+R1
+R3
+R4
+!i122 11
+R5
+Z61 8H:/Documents/GitHub/305-Mini-Project/PROJECT/scoreTracker.vhd
+Z62 FH:/Documents/GitHub/305-Mini-Project/PROJECT/scoreTracker.vhd
+l0
+L6 1
+V=KfV@_`<1CAX=nzY:C>8e0
+!s100 [h=EOnNNZb@oR95@RPCeA0
+R8
+32
+R48
+!i10b 1
+R53
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/scoreTracker.vhd|
+Z64 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/scoreTracker.vhd|
+!i113 0
+R13
+R14
+Abehaviour
+R15
+R2
+R1
+R3
+R4
+DEx4 work 12 scoretracker 0 22 =KfV@_`<1CAX=nzY:C>8e0
+!i122 11
+l62
+L17 123
+V^H4LjeDnMjo92E`<8JiZ^3
+!s100 gIfaJTH^e3O]n_@SJCmF@3
+R8
+32
+R48
+!i10b 1
+R53
+R63
+R64
+!i113 0
+R13
+R14
+Evga_sync
+R0
+R1
+R2
+R3
+R4
+!i122 12
+R5
+Z65 8H:/Documents/GitHub/305-Mini-Project/PROJECT/VGA_SYNC.vhd
+Z66 FH:/Documents/GitHub/305-Mini-Project/PROJECT/VGA_SYNC.vhd
+l0
+L7 1
+VcdCRFk=kgOe`]L4zhZDZA1
+!s100 _l^FX8bbCD3IjI0S=_RTW3
+R8
+32
+Z67 !s110 1685004072
+!i10b 1
+Z68 !s108 1685004072.000000
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|H:/Documents/GitHub/305-Mini-Project/PROJECT/VGA_SYNC.vhd|
+!s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/VGA_SYNC.vhd|
+!i113 0
+R13
+R14
+Aa
+R1
+R2
+R3
+R4
+DEx4 work 8 vga_sync 0 22 cdCRFk=kgOe`]L4zhZDZA1
+!i122 12
+l18
+L13 77
+V@:[OozN^N9^agKj@@<;V42
+!s100 WFb=Ah6ekZG;K4j`AXbUV2
+R8
+32
+R67
+!i10b 1
+R68
+R69
+Z70 !s107 H:/Documents/GitHub/305-Mini-Project/PROJECT/VGA_SYNC.vhd|
+!i113 0
+R13
+R14

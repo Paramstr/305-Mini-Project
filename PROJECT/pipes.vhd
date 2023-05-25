@@ -11,7 +11,7 @@ ENTITY pipes IS
           pixel_row, pixel_column: IN std_logic_vector(9 DOWNTO 0);
 		  reset_behaviour: IN std_logic;
 		  reset_after_collision: IN std_logic;
-		  pipe_on, pipe_on_2, pipe_on_3, pipe_on_4, ground_on, black_bar: OUT std_logic;
+		  pipe_on, pipe_on_2, pipe_on_3, pipe_on_4, ground_on, background: OUT std_logic;
 		pipe1_pos, pipe2_pos, pipe3_pos, pipe4_pos: out std_logic_vector (10 downto 0));		
 END pipes;
 
@@ -79,7 +79,9 @@ pipe_on_4 <= '1' WHEN ((pixel_column<=pipe4_x_pos)and(pixel_column>= compute4)an
 else '0';
 
 ground_on<= '1' WHEN(pixel_row>=400 and pixel_row<=480 and (pixel_column>= 0 and pixel_column<=640)) else '0';
-black_bar<= '1' when((pixel_row>=0 and pixel_row<=40)and (pixel_column>=0 and pixel_column<=640)) else '0';
+--black_bar<= '0' when((pixel_row>=0 and pixel_row<=40)and (pixel_column>=0 and pixel_column<=640)) else '0';
+background<= '1' when((pixel_row>=40 and pixel_row<=480)and (pixel_column>=0 and pixel_column<=640)) else '0';
+
 
 move_pipe:process(vert_sync)
 variable random : integer:=0;
