@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity lfsr is
+    port (
+      clk  : in  std_logic;          -- clock input
+      rst  : in  std_logic;          -- reset input
+      seed : in  std_logic_vector(31 downto 0); -- initial seed value
+      poly : in  std_logic_vector(31 downto 0); -- feedback polynomial
+      output  : out std_logic_vector(31 downto 0) -- output signal
+    );
+  end entity;
+  
+  
+  
+  architecture rtl of lfsr is
+    signal reg : std_logic_vector(31 downto 0);
+  begin
+    process (clk, rst)
+    begin
+      if (rst = '1') then
+        reg <= seed;
+      elsif (rising_edge(clk)) then
+        if (reg(0) = '1') then
+          reg <= ('0' & reg(31 downto 1)) xor poly;
+        else
+          reg <= '0' & reg(31 downto 1);
+        end if;
+      end if;
+    end process;
+  
+    output <= reg;
+  end architecture;
+  
