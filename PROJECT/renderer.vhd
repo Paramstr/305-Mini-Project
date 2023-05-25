@@ -5,7 +5,7 @@ use ieee.std_logic_arith.all;
 
 entity renderer is
 PORT(clk: in std_logic;
-pipe_on, pipe_on2, pipe_on3, pipe_on4, bird_on, ground_on, black_bar: in std_logic;
+pipe_on, pipe_on2, pipe_on3, pipe_on4, bird_on, ground_on, black_bar,mainscreen_letters_on: in std_logic;
 red_out, green_out, blue_out: out std_logic);
 end entity renderer;
 
@@ -30,6 +30,10 @@ elsif(pipe_on = '1' or pipe_on2 = '1' or pipe_on3 = '1' or pipe_on4 = '1') then
 red_out<= '0';
 green_out<='1';
 blue_out<='0';
+elsif(mainscreen_letters_on = '1') THEN
+red_out<= '1';
+green_out<='1';
+blue_out<='1';
 else
 red_out<= '0';
 green_out<='1';
