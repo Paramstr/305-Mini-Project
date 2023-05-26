@@ -1,0 +1,62 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity fontgen is
+PORT(
+    clk: in std_logic;
+    pixel_row, pixel_column: IN std_logic_vector(9 DOWNTO 0);
+    character_address	: OUT	STD_LOGIC_VECTOR (5 DOWNTO 0);
+);
+
+end entity renderer;
+
+
+architecture behaviour of fontgen is
+
+    SIGNAL font_row, font_col	:	STD_LOGIC_VECTOR (2 DOWNTO 0);
+    SIGNAL x,y: STD_LOGIC_VECTOR(2 downto 0);
+    SIGNAL A: STD_LOGIC_VECTOR(5 DOWNTO 0) := "000001";
+    SIGNAL B: STD_LOGIC_VECTOR(5 DOWNTO 0) := "000010";
+    SIGNAL C: STD_LOGIC_VECTOR(5 DOWNTO 0) := "000011";
+    SIGNAL D: STD_LOGIC_VECTOR(5 DOWNTO 0) := "000100";
+    SIGNAL E: STD_LOGIC_VECTOR(5 DOWNTO 0) := "000101";
+    SIGNAL F: STD_LOGIC_VECTOR(5 DOWNTO 0) := "000110";
+    SIGNAL G: STD_LOGIC_VECTOR(5 DOWNTO 0) := "000111";
+    SIGNAL H: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001000";
+    SIGNAL I: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001001";
+    SIGNAL J: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001010";
+    SIGNAL K: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001011";
+    SIGNAL L: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001100";
+    SIGNAL M: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001101";
+    SIGNAL N: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001110";
+    SIGNAL O: STD_LOGIC_VECTOR(5 DOWNTO 0) := "001111";
+    SIGNAL P: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010000";
+    SIGNAL Q: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010001";
+    SIGNAL R: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010010";
+    SIGNAL S: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010011";
+    SIGNAL T: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010100";
+    SIGNAL U: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010101";
+    SIGNAL V: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010110";
+    SIGNAL W: STD_LOGIC_VECTOR(5 DOWNTO 0) := "010111";
+    SIGNAL X: STD_LOGIC_VECTOR(5 DOWNTO 0) := "011000";
+    SIGNAL Y: STD_LOGIC_VECTOR(5 DOWNTO 0) := "011001";
+    SIGNAL Z: STD_LOGIC_VECTOR(5 DOWNTO 0) := "011010";
+    
+    
+
+begin
+
+character_score:process(clk)
+begin
+
+    if(pixel_column >= 100 and pixel_row <= 100) then
+        character_address := S;
+        x:= pixel_row - '000010';
+        font_row:= x(2 downto 0);
+        y:= pixel_column - '000010';
+        font_col:= y(2 downto 0);
+ 
+end process character_score;
+end architecture fontgen;
