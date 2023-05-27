@@ -76,8 +76,13 @@ else '0';
 pipe_on_4 <= '1' WHEN ((pixel_column<=pipe4_x_pos)and(pixel_column+gap_width>= pipe4_x_pos)and ((pipe4_y_pos+gap_height<=pixel_row and pixel_row<400)or((pixel_row<=pipe4_y_pos)and pixel_row>=40)))
 else '0';
 
-ground_on<= '1' WHEN(pixel_row>=400 and pixel_row<=480 and (pixel_column>= 0 and pixel_column<=640)) else '0';
+ground_on <= '1' WHEN (pixel_row >= 270 and pixel_row < 324 and pixel_column >= 251 and pixel_column < 389) or (pixel_row >= 340 and pixel_row < 390 and pixel_column >= 251 and pixel_column < 389) ELSE '0';
+--ground_on<= '1' WHEN((pixel_row>=400 and pixel_row<=480) and (pixel_column>= 0 and pixel_column<=640)) else '0';
+
 blackbar<= '1' WHEN(pixel_row>=0 and pixel_row<=40 and (pixel_column>= 0 and pixel_column<=640)) else '0';
+
+	
+  
 
 move_pipe:process(vert_sync)
 variable random : integer:=0;
