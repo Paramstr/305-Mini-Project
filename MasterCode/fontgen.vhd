@@ -176,6 +176,7 @@ begin
 
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 544 and pixel_column < 560)) then
           temp_heart <= HEARTSIGN; 
+          
 -- ############### SHOW 'mode: MAINSCREEN' ###############
         elsif((pixel_row >= 176 and pixel_row < 192) and (pixel_column >= 224 and pixel_column < 240)) then
           temp_mode <= F;

@@ -12,7 +12,7 @@ end entity renderer;
 
 
 architecture behaviour of renderer is
-    shared variable state: std_logic := '0';
+    shared variable state: std_logic := '1';
 begin
 process(clk, pipe_on, pipe_on2, bird_on, ground_on)
 begin
@@ -25,7 +25,6 @@ if (state = '1') then --normal mode
         red_out<= '1';
         green_out<='0';
         blue_out<='0';
-
     elsif(rom_hearts = '1') then
         red_out<= '1';
         green_out<='0';
@@ -56,7 +55,13 @@ if (state = '1') then --normal mode
     blue_out<='1';
     end if;
 else  --main menu
-    if(rom_mode = '1') then --show menu characters
+
+    if(bird_on = '1') then
+        red_out<= '1';
+        green_out<='1';
+        blue_out<='0';
+
+    elsif(rom_mode = '1') then --show menu characters
         red_out<= '1';
         green_out<='1';
         blue_out<='1';
