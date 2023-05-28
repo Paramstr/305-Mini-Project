@@ -12,6 +12,7 @@ ENTITY pipes IS
           pixel_row, pixel_column: IN std_logic_vector(9 DOWNTO 0);
 		  reset_behaviour: IN std_logic;
 		  count: in integer;
+		  death: in std_logic;
 		  pipe_on, pipe_on_2, pipe_on_3, pipe_on_4, ground_on, blackbar: OUT std_logic;
 		pipe1_pos, pipe2_pos, pipe3_pos, pipe4_pos: out std_logic_vector (10 downto 0);
 		pipey, pipey2, pipey3, pipey4: out std_logic_vector(9 downto 0);
@@ -120,6 +121,7 @@ prevCount<=count;
 	speed:=CONV_STD_LOGIC_VECTOR(0,11);
 	elsif(stop = '0') then
 		initial<='0';
+		if(death = '0') then
 		if(pipe_x_pos>=CONV_STD_LOGIC_VECTOR(1000,11)) then
 		pipe_x_pos<= CONV_STD_LOGIC_VECTOR(640,11)+gap_width;
 		random := (to_integer(IEEE.numeric_std.unsigned(lfsr_out)) mod 180)+80;
@@ -151,6 +153,7 @@ prevCount<=count;
 		else
 		pipe4_x_pos<= pipe4_x_pos-speed;
 		end if; 
+		end if;
 	elsif(stop='1' and initial='1') then
 	pipe_x_pos<=CONV_STD_LOGIC_VECTOR(250,11);
 	pipe2_x_pos<=CONV_STD_LOGIC_VECTOR(430,11);

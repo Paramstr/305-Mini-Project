@@ -9,6 +9,7 @@ ENTITY flappy_bird IS
 		( pause_button, clk, vert_sync, mouse_click: IN std_logic;
           pixel_row, pixel_column	: IN std_logic_vector(9 DOWNTO 0);
 		  reset_button: in std_logic;
+		  death: in std_logic;
 		 ball_on, stop_signal, mouse_clicked: OUT std_logic;
 		bird_x_pos: OUT std_logic_vector(10 downto 0);
 		Legit_reset: out std_logic;
@@ -142,6 +143,7 @@ if (rising_edge(vert_sync)) then
 		
 	else
 	if(gamePause = '1') then
+		if(death = '0')then
 		if(prevMouse /= Mouse_click) then
 			if(mouse_click = '1') then
 				mouse_clicked<='1';
@@ -159,6 +161,7 @@ if (rising_edge(vert_sync)) then
 			else
 				ball_y_motion<=ball_y_motion+CONV_STD_LOGIC_VECTOR(1,10);
 			end if;
+		end if;
 		end if;
 		bird_y_pos := bird_y_pos + ball_y_motion;
 		birdHead_y_pos := birdHead_y_pos + ball_y_motion;

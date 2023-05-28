@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FlappyBird
-Sun May 28 18:52:14 2023
+Sun May 28 21:42:56 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -65,14 +65,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 28 18:52:14 2023           ;
+; Analysis & Synthesis Status     ; Successful - Sun May 28 21:42:56 2023           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; FlappyBird                                      ;
 ; Top-level Entity Name           ; FlappyBird                                      ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 384                                             ;
-; Total pins                      ; 36                                              ;
+; Total registers                 ; 391                                             ;
+; Total pins                      ; 35                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 10,752                                          ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -245,18 +245,18 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1960                        ;
+; Estimate of Logic utilization (ALMs needed) ; 1987                        ;
 ;                                             ;                             ;
-; Combinational ALUT usage for logic          ; 3694                        ;
-;     -- 7 input functions                    ; 4                           ;
-;     -- 6 input functions                    ; 209                         ;
-;     -- 5 input functions                    ; 272                         ;
-;     -- 4 input functions                    ; 1043                        ;
-;     -- <=3 input functions                  ; 2166                        ;
+; Combinational ALUT usage for logic          ; 3723                        ;
+;     -- 7 input functions                    ; 8                           ;
+;     -- 6 input functions                    ; 230                         ;
+;     -- 5 input functions                    ; 257                         ;
+;     -- 4 input functions                    ; 1038                        ;
+;     -- <=3 input functions                  ; 2190                        ;
 ;                                             ;                             ;
-; Dedicated logic registers                   ; 384                         ;
+; Dedicated logic registers                   ; 391                         ;
 ;                                             ;                             ;
-; I/O pins                                    ; 36                          ;
+; I/O pins                                    ; 35                          ;
 ; Total MLAB memory bits                      ; 0                           ;
 ; Total block memory bits                     ; 10752                       ;
 ;                                             ;                             ;
@@ -266,9 +266,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                           ;
 ;                                             ;                             ;
 ; Maximum fan-out node                        ; VGA_SYNC:inst|vert_sync_out ;
-; Maximum fan-out                             ; 250                         ;
-; Total fan-out                               ; 14188                       ;
-; Average fan-out                             ; 3.39                        ;
+; Maximum fan-out                             ; 257                         ;
+; Total fan-out                               ; 14327                       ;
+; Average fan-out                             ; 3.40                        ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -277,10 +277,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                      ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |FlappyBird                               ; 3694 (2)            ; 384 (0)                   ; 10752             ; 0          ; 36   ; 0            ; |FlappyBird                                                                                                              ; FlappyBird          ; work         ;
+; |FlappyBird                               ; 3723 (1)            ; 391 (0)                   ; 10752             ; 0          ; 35   ; 0            ; |FlappyBird                                                                                                              ; FlappyBird          ; work         ;
 ;    |FSM:inst15|                           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|FSM:inst15                                                                                                   ; FSM                 ; work         ;
 ;    |MOUSE:inst5|                          ; 50 (50)             ; 63 (63)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|MOUSE:inst5                                                                                                  ; MOUSE               ; work         ;
-;    |VGA_SYNC:inst|                        ; 45 (45)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|VGA_SYNC:inst                                                                                                ; VGA_SYNC            ; work         ;
+;    |VGA_SYNC:inst|                        ; 44 (44)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|VGA_SYNC:inst                                                                                                ; VGA_SYNC            ; work         ;
 ;    |char_rom:inst10|                      ; 2 (2)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst10                                                                                              ; char_rom            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst10|altsyncram:altsyncram_component                                                              ; altsyncram          ; work         ;
 ;          |altsyncram_d5g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst10|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated                               ; altsyncram_d5g1     ; work         ;
@@ -293,10 +293,10 @@ refer to the applicable agreement for further details.
 ;    |char_rom:inst13|                      ; 2 (2)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst13                                                                                              ; char_rom            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst13|altsyncram:altsyncram_component                                                              ; altsyncram          ; work         ;
 ;          |altsyncram_d5g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst13|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated                               ; altsyncram_d5g1     ; work         ;
-;    |collisions:inst9|                     ; 155 (155)           ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|collisions:inst9                                                                                             ; collisions          ; work         ;
-;    |flappy_bird:inst19|                   ; 147 (147)           ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|flappy_bird:inst19                                                                                           ; flappy_bird         ; work         ;
-;    |fontgen:inst14|                       ; 156 (156)           ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|fontgen:inst14                                                                                               ; fontgen             ; work         ;
-;    |pipes:inst16|                         ; 3035 (427)          ; 160 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16                                                                                                 ; pipes               ; work         ;
+;    |collisions:inst9|                     ; 172 (172)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|collisions:inst9                                                                                             ; collisions          ; work         ;
+;    |flappy_bird:inst19|                   ; 154 (154)           ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|flappy_bird:inst19                                                                                           ; flappy_bird         ; work         ;
+;    |fontgen:inst14|                       ; 159 (159)           ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|fontgen:inst14                                                                                               ; fontgen             ; work         ;
+;    |pipes:inst16|                         ; 3041 (433)          ; 160 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16                                                                                                 ; pipes               ; work         ;
 ;       |lfsr:lfsr_inst|                    ; 20 (20)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16|lfsr:lfsr_inst                                                                                  ; lfsr                ; work         ;
 ;       |lpm_divide:Mod0|                   ; 1450 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_uio:auto_generated|  ; 1450 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16|lpm_divide:Mod0|lpm_divide_uio:auto_generated                                                   ; lpm_divide_uio      ; work         ;
@@ -310,7 +310,7 @@ refer to the applicable agreement for further details.
 ;    |pll:inst2|                            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2                                                                                                    ; pll                 ; pll          ;
 ;       |pll_0002:pll_inst|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2|pll_0002:pll_inst                                                                                  ; pll_0002            ; pll          ;
 ;          |altera_pll:altera_pll_i|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i                                                          ; altera_pll          ; work         ;
-;    |renderer:inst8|                       ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|renderer:inst8                                                                                               ; renderer            ; work         ;
+;    |renderer:inst8|                       ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|renderer:inst8                                                                                               ; renderer            ; work         ;
 ;    |scoreTracker:inst7|                   ; 82 (46)             ; 48 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7                                                                                           ; scoreTracker        ; work         ;
 ;       |BCD_counter:counterMins|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterMins                                                                   ; BCD_counter         ; work         ;
 ;       |BCD_counter:counterSec|            ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterSec                                                                    ; BCD_counter         ; work         ;
@@ -396,12 +396,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 384   ;
-; Number of registers using Synchronous Clear  ; 90    ;
+; Total registers                              ; 391   ;
+; Number of registers using Synchronous Clear  ; 94    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 258   ;
+; Number of registers using Clock Enable       ; 261   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -411,67 +411,66 @@ Encoding Type:  One-Hot
 +-------------------------------------------------+---------+
 ; Inverted Register                               ; Fan out ;
 +-------------------------------------------------+---------+
-; collisions:inst9|reset_behaviour                ; 4       ;
 ; flappy_bird:inst19|reset_behaviour              ; 152     ;
-; pipes:inst16|pipe2_x_pos[5]                     ; 10      ;
+; pipes:inst16|pipe2_x_pos[5]                     ; 6       ;
 ; pipes:inst16|pipe2_x_pos[3]                     ; 7       ;
 ; pipes:inst16|pipe2_x_pos[1]                     ; 5       ;
 ; pipes:inst16|pipe2_x_pos[2]                     ; 5       ;
 ; pipes:inst16|pipe2_x_pos[7]                     ; 6       ;
 ; pipes:inst16|pipe2_x_pos[8]                     ; 6       ;
-; pipes:inst16|pipe3_x_pos[5]                     ; 10      ;
-; pipes:inst16|pipe3_x_pos[6]                     ; 9       ;
+; pipes:inst16|pipe3_x_pos[5]                     ; 6       ;
+; pipes:inst16|pipe3_x_pos[6]                     ; 5       ;
 ; pipes:inst16|pipe3_x_pos[1]                     ; 5       ;
 ; pipes:inst16|pipe3_x_pos[9]                     ; 7       ;
 ; pipes:inst16|pipe4_x_pos[4]                     ; 8       ;
 ; pipes:inst16|pipe4_x_pos[1]                     ; 5       ;
 ; pipes:inst16|pipe4_x_pos[2]                     ; 5       ;
 ; pipes:inst16|pipe4_x_pos[8]                     ; 6       ;
-; pipes:inst16|pipe4_x_pos[9]                     ; 5       ;
+; pipes:inst16|pipe4_x_pos[9]                     ; 7       ;
 ; pipes:inst16|pipe_x_pos[4]                      ; 8       ;
-; pipes:inst16|pipe_x_pos[5]                      ; 10      ;
-; pipes:inst16|pipe_x_pos[6]                      ; 9       ;
+; pipes:inst16|pipe_x_pos[5]                      ; 6       ;
+; pipes:inst16|pipe_x_pos[6]                      ; 5       ;
 ; pipes:inst16|pipe_x_pos[3]                      ; 7       ;
 ; pipes:inst16|pipe_x_pos[1]                      ; 5       ;
 ; pipes:inst16|pipe_x_pos[7]                      ; 6       ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[7]     ; 9       ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[6]     ; 8       ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[5]     ; 13      ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[4]     ; 14      ;
-; pipes:inst16|pipe3_y_pos[2]                     ; 6       ;
-; pipes:inst16|pipe_y_pos[2]                      ; 6       ;
-; pipes:inst16|pipe_y_pos[3]                      ; 5       ;
-; pipes:inst16|pipe3_y_pos[3]                     ; 5       ;
-; pipes:inst16|pipe2_y_pos[3]                     ; 5       ;
-; pipes:inst16|pipe4_y_pos[1]                     ; 4       ;
-; pipes:inst16|pipe4_y_pos[3]                     ; 5       ;
-; pipes:inst16|pipe_y_pos[7]                      ; 4       ;
-; pipes:inst16|pipe2_y_pos[7]                     ; 4       ;
-; pipes:inst16|pipe2_y_pos[6]                     ; 4       ;
-; pipes:inst16|pipe3_y_pos[5]                     ; 4       ;
-; pipes:inst16|pipe3_y_pos[4]                     ; 4       ;
-; pipes:inst16|pipe4_y_pos[7]                     ; 4       ;
-; pipes:inst16|pipe4_y_pos[6]                     ; 4       ;
-; pipes:inst16|pipe4_y_pos[5]                     ; 4       ;
-; pipes:inst16|pipe4_y_pos[4]                     ; 4       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[2] ; 4       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[7] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[6] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[5] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[3] ; 3       ;
 ; flappy_bird:inst19|\move_bird:birdFoot_y_pos[7] ; 3       ;
 ; flappy_bird:inst19|\move_bird:birdFoot_y_pos[6] ; 3       ;
 ; flappy_bird:inst19|\move_bird:birdFoot_y_pos[5] ; 3       ;
 ; flappy_bird:inst19|\move_bird:birdFoot_y_pos[4] ; 3       ;
 ; flappy_bird:inst19|\move_bird:birdFoot_y_pos[3] ; 3       ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[7]     ; 14      ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[6]     ; 7       ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[5]     ; 12      ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[4]     ; 19      ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[2] ; 4       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[7] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[6] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[5] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[3] ; 3       ;
+; pipes:inst16|pipe_y_pos[2]                      ; 6       ;
+; pipes:inst16|pipe_y_pos[7]                      ; 4       ;
+; pipes:inst16|pipe_y_pos[3]                      ; 5       ;
+; pipes:inst16|pipe3_y_pos[2]                     ; 6       ;
+; pipes:inst16|pipe4_y_pos[1]                     ; 4       ;
+; pipes:inst16|pipe2_y_pos[7]                     ; 4       ;
+; pipes:inst16|pipe2_y_pos[6]                     ; 4       ;
+; pipes:inst16|pipe2_y_pos[3]                     ; 5       ;
+; pipes:inst16|pipe3_y_pos[5]                     ; 4       ;
+; pipes:inst16|pipe3_y_pos[4]                     ; 4       ;
+; pipes:inst16|pipe3_y_pos[3]                     ; 5       ;
+; pipes:inst16|pipe4_y_pos[7]                     ; 4       ;
+; pipes:inst16|pipe4_y_pos[6]                     ; 4       ;
+; pipes:inst16|pipe4_y_pos[5]                     ; 4       ;
+; pipes:inst16|pipe4_y_pos[4]                     ; 4       ;
+; pipes:inst16|pipe4_y_pos[3]                     ; 5       ;
 ; pipes:inst16|initial                            ; 1       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[2]              ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[1]              ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[0]              ; 8       ;
-; pipes:inst16|lfsr:lfsr_inst|reg[3]              ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[5]              ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[6]              ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[7]              ; 4       ;
+; pipes:inst16|lfsr:lfsr_inst|reg[3]              ; 4       ;
 ; pipes:inst16|prevCount[0]                       ; 1       ;
 ; pipes:inst16|prevCount[31]                      ; 1       ;
 ; MOUSE:inst5|send_char                           ; 3       ;
@@ -492,7 +491,7 @@ Encoding Type:  One-Hot
 ; pipes:inst16|lfsr:lfsr_inst|reg[23]             ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[22]             ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[21]             ; 4       ;
-; Total number of inverted registers = 81         ;         ;
+; Total number of inverted registers = 80         ;         ;
 +-------------------------------------------------+---------+
 
 
@@ -501,32 +500,33 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |FlappyBird|collisions:inst9|instDie                                ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |FlappyBird|scoreTracker:inst7|counting[4]                          ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |FlappyBird|VGA_SYNC:inst|v_count[7]                                ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |FlappyBird|VGA_SYNC:inst|v_count[9]                                ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterSec|counter[0]    ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterTens|counter[1]   ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterMins|counter[3]   ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |FlappyBird|flappy_bird:inst19|ball_y_motion[9]                     ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[10]                             ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[10]                            ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[3]                             ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe4_x_pos[0]                             ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|\move_bird:birdHead_y_pos[4]         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterTens|counter[0]   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterMins|counter[0]   ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|\move_bird:bird_y_pos[0]             ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|ball_y_motion[9]                     ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[8]                              ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[4]                             ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[10]                            ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe4_x_pos[10]                            ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 6 LEs                ; 10 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_scoreval[4]                         ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_scoreval[1]                         ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_scoreval[0]                         ;
 ; 18:1               ; 6 bits    ; 72 LEs        ; 24 LEs               ; 48 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_score[5]                            ;
-; 40:1               ; 3 bits    ; 78 LEs        ; 72 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|fontgen:inst14|temp_mode[2]                             ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[5]                              ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[5]                             ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[5]                             ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe4_x_pos[9]                             ;
+; 42:1               ; 3 bits    ; 84 LEs        ; 72 LEs               ; 12 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_mode[0]                             ;
 ; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|\move_bird:bird_y_pos[5]             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |FlappyBird|fontgen:inst14|temp_mode                                ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[6]                              ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[1]                             ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[1]                             ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe4_x_pos[8]                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |FlappyBird|fontgen:inst14|temp_scoreval                            ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |FlappyBird|char_rom:inst12|Mux0                                    ;
 ; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |FlappyBird|pipes:inst16|speed                                      ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display1|SevenSeg_out[0] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display2|SevenSeg_out[0] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display3|SevenSeg_out[5] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display1|SevenSeg_out[5] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display2|SevenSeg_out[3] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display3|SevenSeg_out[3] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 
 
@@ -1221,15 +1221,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 384                         ;
+; arriav_ff             ; 391                         ;
 ;     CLR               ; 33                          ;
-;     ENA               ; 176                         ;
+;     ENA               ; 179                         ;
 ;     ENA CLR           ; 15                          ;
 ;     ENA SCLR          ; 67                          ;
-;     SCLR              ; 23                          ;
+;     SCLR              ; 27                          ;
 ;     plain             ; 70                          ;
 ; arriav_io_obuf        ; 2                           ;
-; arriav_lcell_comb     ; 3698                        ;
+; arriav_lcell_comb     ; 3726                        ;
 ;     arith             ; 1502                        ;
 ;         0 data inputs ; 108                         ;
 ;         1 data inputs ; 285                         ;
@@ -1237,24 +1237,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 489                         ;
 ;         4 data inputs ; 464                         ;
 ;         5 data inputs ; 44                          ;
-;     extend            ; 4                           ;
-;         7 data inputs ; 4                           ;
-;     normal            ; 2178                        ;
-;         1 data inputs ; 40                          ;
-;         2 data inputs ; 951                         ;
-;         3 data inputs ; 171                         ;
-;         4 data inputs ; 579                         ;
-;         5 data inputs ; 228                         ;
-;         6 data inputs ; 209                         ;
+;     extend            ; 8                           ;
+;         7 data inputs ; 8                           ;
+;     normal            ; 2202                        ;
+;         1 data inputs ; 38                          ;
+;         2 data inputs ; 964                         ;
+;         3 data inputs ; 183                         ;
+;         4 data inputs ; 574                         ;
+;         5 data inputs ; 213                         ;
+;         6 data inputs ; 230                         ;
 ;     shared            ; 14                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 12                          ;
-; boundary_port         ; 36                          ;
+; boundary_port         ; 35                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 95.00                       ;
-; Average LUT depth     ; 60.64                       ;
+; Max LUT depth         ; 94.70                       ;
+; Average LUT depth     ; 60.13                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1273,7 +1273,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Sun May 28 18:51:47 2023
+    Info: Processing started: Sun May 28 21:42:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FlappyBird -c FlappyBird
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1284,7 +1284,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file fontgen
     Info (12022): Found design unit 1: fontgen-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 28
     Info (12023): Found entity 1: fontgen File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file collisions.vhd
-    Info (12022): Found design unit 1: collisions-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/collisions.vhd Line: 17
+    Info (12022): Found design unit 1: collisions-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/collisions.vhd Line: 18
     Info (12023): Found entity 1: collisions File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/collisions.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file scoretracker.vhd
     Info (12022): Found design unit 1: scoreTracker-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/scoreTracker.vhd Line: 23
@@ -1296,10 +1296,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file lfsr.vh
     Info (12022): Found design unit 1: lfsr-rtl File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/LFSR.vhd Line: 17
     Info (12023): Found entity 1: lfsr File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/LFSR.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file pipes.vhd
-    Info (12022): Found design unit 1: pipes-behavior File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 22
+    Info (12022): Found design unit 1: pipes-behavior File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 23
     Info (12023): Found entity 1: pipes File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file flappy_bird.vhd
-    Info (12022): Found design unit 1: flappy_bird-behavior File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 18
+    Info (12022): Found design unit 1: flappy_bird-behavior File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 19
     Info (12023): Found entity 1: flappy_bird File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file vga_sync.vhd
     Info (12022): Found design unit 1: VGA_SYNC-a File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/VGA_SYNC.vhd Line: 13
@@ -1351,7 +1351,6 @@ Warning (275080): Converted elements in bus name "pipey4" using legacy naming ru
 Warning (275089): Not all bits in bus "LEDR[4..0]" are used
 Warning (275080): Converted elements in bus name "LEDR" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "LEDR[0]" to "LEDR0"
-    Warning (275081): Converted element name(s) from "LEDR[1]" to "LEDR1"
     Warning (275081): Converted element name(s) from "LEDR[2]" to "LEDR2"
     Warning (275081): Converted element name(s) from "LEDR[4]" to "LEDR4"
 Warning (275080): Converted elements in bus name "pipe_y" using legacy naming rules. Make any assignments on the new names, not on the original names.
@@ -1446,12 +1445,12 @@ Warning (10492): VHDL Process Statement warning at renderer.vhd(63): signal "rom
 Warning (10492): VHDL Process Statement warning at renderer.vhd(67): signal "mainscreen_red1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 67
 Warning (10492): VHDL Process Statement warning at renderer.vhd(71): signal "mainscreen_red2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 71
 Info (12128): Elaborating entity "pipes" for hierarchy "pipes:inst16"
-Info (12128): Elaborating entity "lfsr" for hierarchy "pipes:inst16|lfsr:lfsr_inst" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 54
+Info (12128): Elaborating entity "lfsr" for hierarchy "pipes:inst16|lfsr:lfsr_inst" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 55
 Warning (10492): VHDL Process Statement warning at LFSR.vhd(23): signal "seed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/LFSR.vhd Line: 23
 Info (12128): Elaborating entity "flappy_bird" for hierarchy "flappy_bird:inst19"
-Warning (10540): VHDL Signal Declaration warning at flappy_bird.vhd(35): used explicit default value for signal "Head_xPos" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 35
-Warning (10540): VHDL Signal Declaration warning at flappy_bird.vhd(41): used explicit default value for signal "FootLeft_xPos" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 41
-Warning (10540): VHDL Signal Declaration warning at flappy_bird.vhd(43): used explicit default value for signal "FootRight_xPos" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 43
+Warning (10540): VHDL Signal Declaration warning at flappy_bird.vhd(36): used explicit default value for signal "Head_xPos" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 36
+Warning (10540): VHDL Signal Declaration warning at flappy_bird.vhd(42): used explicit default value for signal "FootLeft_xPos" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 42
+Warning (10540): VHDL Signal Declaration warning at flappy_bird.vhd(44): used explicit default value for signal "FootRight_xPos" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/flappy_bird.vhd Line: 44
 Info (12128): Elaborating entity "MOUSE" for hierarchy "MOUSE:inst5"
 Warning (10036): Verilog HDL or VHDL warning at mouse.vhd(25): object "CHARIN" assigned a value but never read File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/mouse.vhd Line: 25
 Warning (10492): VHDL Process Statement warning at mouse.vhd(151): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/mouse.vhd Line: 151
@@ -1459,6 +1458,7 @@ Warning (10492): VHDL Process Statement warning at mouse.vhd(155): signal "CHARO
 Warning (10492): VHDL Process Statement warning at mouse.vhd(156): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/mouse.vhd Line: 156
 Warning (10492): VHDL Process Statement warning at mouse.vhd(157): signal "CHAROUT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/mouse.vhd Line: 157
 Info (12128): Elaborating entity "collisions" for hierarchy "collisions:inst9"
+Warning (10036): Verilog HDL or VHDL warning at collisions.vhd(76): object "collision" assigned a value but never read File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/collisions.vhd Line: 76
 Info (12128): Elaborating entity "FSM" for hierarchy "FSM:inst15"
 Info (12128): Elaborating entity "scoreTracker" for hierarchy "scoreTracker:inst7"
 Warning (10492): VHDL Process Statement warning at scoreTracker.vhd(142): signal "reset_behaviour" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/scoreTracker.vhd Line: 142
@@ -1528,10 +1528,10 @@ Warning (12001): Port "ones_in[5]" does not exist in entity definition of "fontg
 Warning (12001): Port "tens_in[4]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
 Warning (12001): Port "tens_in[5]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
 Info (278001): Inferred 2 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipes:inst16|Mod1" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 125
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipes:inst16|Mod0" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 99
-Info (12130): Elaborated megafunction instantiation "pipes:inst16|lpm_divide:Mod1" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 125
-Info (12133): Instantiated megafunction "pipes:inst16|lpm_divide:Mod1" with the following parameter: File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 125
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipes:inst16|Mod1" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 127
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipes:inst16|Mod0" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 100
+Info (12130): Elaborated megafunction instantiation "pipes:inst16|lpm_divide:Mod1" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 127
+Info (12133): Instantiated megafunction "pipes:inst16|lpm_divide:Mod1" with the following parameter: File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 127
     Info (12134): Parameter "LPM_WIDTHN" = "31"
     Info (12134): Parameter "LPM_WIDTHD" = "31"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -1542,8 +1542,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_7nh File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/db/sign_div_unsign_7nh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_k2f.tdf
     Info (12023): Found entity 1: alt_u_div_k2f File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/db/alt_u_div_k2f.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "pipes:inst16|lpm_divide:Mod0" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 99
-Info (12133): Instantiated megafunction "pipes:inst16|lpm_divide:Mod0" with the following parameter: File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 99
+Info (12130): Elaborated megafunction instantiation "pipes:inst16|lpm_divide:Mod0" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 100
+Info (12133): Instantiated megafunction "pipes:inst16|lpm_divide:Mod0" with the following parameter: File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 100
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "32"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
@@ -1560,23 +1560,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_
 Info (13000): Registers with preset signals will power-up high File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/LFSR.vhd Line: 22
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "char_rom:inst11|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/db/altsyncram_d5g1.tdf Line: 31
 Info (17036): Removed 3 MSB VCC or GND address nodes from RAM block "char_rom:inst13|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/db/altsyncram_d5g1.tdf Line: 31
+Info (17036): Removed 1 MSB VCC or GND address nodes from RAM block "char_rom:inst11|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/db/altsyncram_d5g1.tdf Line: 31
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Info (21057): Implemented 3885 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3914 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 30 output pins
+    Info (21059): Implemented 29 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 3816 logic cells
+    Info (21061): Implemented 3846 logic cells
     Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
-    Info: Peak virtual memory: 4939 megabytes
-    Info: Processing ended: Sun May 28 18:52:14 2023
+    Info: Peak virtual memory: 4941 megabytes
+    Info: Processing ended: Sun May 28 21:42:56 2023
     Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Total CPU time (on all processors): 00:00:31
 
 

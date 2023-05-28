@@ -100,10 +100,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDR1",
-					"strict" : false
-				},
-				{
 					"name" : "LEDR2",
 					"strict" : false
 				},

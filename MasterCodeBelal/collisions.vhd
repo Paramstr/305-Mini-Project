@@ -10,8 +10,9 @@ pipey, pipey2, pipey3, pipey4: in std_logic_vector(9 downto 0);
 birdy: in std_logic_vector(9 downto 0);
 birdx: in std_logic_vector(10 downto 0);
 enable: in std_logic;
-reset: out std_logic;
+reset: in std_logic;
 death: out std_logic);
+--collision_counter: out std_logic_vector(1 downto 0));
 end entity collisions;
 
 architecture behaviour of collisions is
@@ -72,77 +73,123 @@ pipe4_bottom<=pipey4+CONV_STD_LOGIC_VECTOR(132,10);
 floor<= CONV_STD_LOGIC_VECTOR(392,10);
 
 process(vert_sync)
-variable reset_behaviour: std_logic:='1';
-variable collision: std_logic;
-begin
-if(rising_edge(vert_sync)) then
-if(enable='1')then
-	if(
-        (bird_right>=pipe1_left)
-        and
-        (bird_left<=pipe1_right)
-        and
-        (
-            (bird_bottom>=pipe1_bottom)
-            or
-            (bird_top<=pipe1_top)
-        )
-    ) then
-    collision:='1';
-    elsif(
-        (bird_right>=pipe2_left)
-        and
-        (bird_left<=pipe2_right)
-        and
-        (
-            (bird_bottom>=pipe2_bottom)
-            or
-            (bird_top<=pipe2_top)
-        )
-    )then
-    collision:='1';
-     elsif(
-       (bird_right>=pipe3_left)
-        and
-        (bird_left<=pipe3_right)
-        and
-        (
-            (bird_bottom>=pipe3_bottom)
-            or
-            (bird_top<=pipe3_top)
-        )
-    )then
-    collision:='1';
-    elsif(
-       (bird_right>=pipe4_left)
-        and
-        (bird_left<=pipe4_right)
-        and
-        (
-            (bird_bottom>=pipe4_bottom)
-            or
-            (bird_top<=pipe4_top)
-        )
-    )then
-    collision:='1';
-    elsif(
-        (bird_bottom>=floor)
-    )then
-    collision:='1';
-    else
-    collision:='0';
+    variable collision: std_logic:= '0';
+    variable flagged1, flagged2, flagged3, flagged4: std_logic:='0'; -- separate flags
+    variable counter: std_logic_vector(1 downto 0):= CONV_STD_LOGIC_VECTOR(0,2);
+    variable instDie: std_logic:='0';
+    
+    begin
+    if(rising_edge(vert_sync)) then
+    if(reset = '1') then
+        flagged1:='0';
+        flagged2:='0';
+        flagged3:='0';
+        flagged4:='0';
+        counter:=CONV_STD_LOGIC_VECTOR(0,2);
+        instDie:= '0';
+        collision:='0';
+    elsif(enable='1')then
+        if( -- Pipe 1
+            (bird_right>=pipe1_left)
+            and
+            (bird_left<=pipe1_right)
+            and
+            (
+                (bird_bottom>=pipe1_bottom)
+                or
+                (bird_top<=pipe1_top)
+            )
+        ) then
+            if(flagged1 = '0') then
+                collision:='1';
+                counter:= counter+CONV_STD_LOGIC_VECTOR(1,2);
+                flagged1 := '1';
+            end if;
+        --signal collision counter
+        elsif( -- Pipe 2
+            (bird_right>=pipe2_left)
+            and
+            (bird_left<=pipe2_right)
+            and
+            (
+                (bird_bottom>=pipe2_bottom)
+                or
+                (bird_top<=pipe2_top)
+            )
+        )then
+            if(flagged2 = '0') then
+                collision:='1';
+                counter:= counter+CONV_STD_LOGIC_VECTOR(1,2);
+                flagged2 := '1';
+            end if;
+        --signal collision counter
+         elsif( -- Pipe 3
+           (bird_right>=pipe3_left)
+            and
+            (bird_left<=pipe3_right)
+            and
+            (
+                (bird_bottom>=pipe3_bottom)
+                or
+                (bird_top<=pipe3_top)
+            )
+        )then
+            if(flagged3 = '0') then
+                collision:='1';
+                counter:= counter+CONV_STD_LOGIC_VECTOR(1,2);
+                flagged3 := '1';
+            end if;
+        --signal collision counter
+        elsif( -- Pipe 4
+           (bird_right>=pipe4_left)
+            and
+            (bird_left<=pipe4_right)
+            and
+            (
+                (bird_bottom>=pipe4_bottom)
+                or
+                (bird_top<=pipe4_top)
+            )
+        )then
+            if(flagged4 = '0') then
+                collision:='1';
+                counter:= counter+CONV_STD_LOGIC_VECTOR(1,2);
+                flagged4 := '1';
+            end if;
+        --signal collision counter
+        elsif( --bottom
+            (bird_bottom>=floor)
+        )then
+            instDie:='1';
+        else
+        collision:='0';
+        end if;
+    
+        if(bird_left>pipe1_right) then
+            flagged1 := '0';
+            collision:='0';
+        elsif(bird_left>pipe2_right) then
+            flagged2:='0';
+            collision:='0';
+        elsif(bird_left>pipe3_right) then
+            flagged3:='0';
+            collision:='0';
+        elsif(bird_left>pipe4_right) then
+            flagged4:='0';
+            collision:='0';
+        end if;
+    
+        if(instDie = '1') then
+            death<='1';
+        else
+            if(counter=CONV_STD_LOGIC_VECTOR(3,2))then
+                death<='1';
+            else 
+                death<='0';
+            end if;
+        end if;
     end if;
-
-    if(collision = '1')then
-    reset_behaviour:='0';
-	 death<= '1';
-    else
-    reset_behaviour:='1';
-	 death<='0';
-    end if;
-end if;
-end if;
-reset<=reset_behaviour;
-end process;
+	 end if;
+    end process;
 
 end behaviour;

@@ -192,16 +192,17 @@ if(rising_edge(clk)) then
           temp_mode <= E;
 
       -- hearts
-			  elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 512 and pixel_column < 528)) then --Heart 1
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 514 and pixel_column < 530)) then --Heart 1 (shifted by 2)
           temp_heart <= HEARTSIGN; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 528 and pixel_column < 544)) then --Heart 2
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 530 and pixel_column < 546)) then --Heart 2 (shifted by 2)
           temp_heart <= SPACE; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 544 and pixel_column < 560)) then --Heart 3
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 546 and pixel_column < 562)) then --Heart 3 (shifted by 2)
           temp_heart <= HEARTSIGN;
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 560 and pixel_column < 576)) then --Heart 4
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 562 and pixel_column < 578)) then --Heart 4 (shifted by 2)
           temp_heart <= SPACE; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 576 and pixel_column < 592)) then --Heart 5
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 578 and pixel_column < 594)) then --Heart 5 (shifted by 2)
           temp_heart <= HEARTSIGN; 
+    
 
 			 else 
 			  temp_score <= SPACE;
