@@ -7,9 +7,14 @@ entity fontgen is
 PORT(
     clk: in std_logic;
     pixel_row, pixel_column: IN std_logic_vector(9 DOWNTO 0);
+
+    currentMode: IN std_logic_vector(1 downto 0);
+    gameOn: IN std_logic;
+    --Score Tracking
+    ones_in: IN std_logic_vector(3 downto 0);
+    tens_in: IN std_logic_vector(3 downto 0);
+    hundreds_in: in std_logic_vector(3 downto 0);
     --char_rom outputs
-	 currentMode: in std_logic_vector(1 downto 0);
-	 gameOn: in std_logic;
     char_address_score : OUT	STD_LOGIC_VECTOR(5 DOWNTO 0);
     char_address_scoreval : OUT	STD_LOGIC_VECTOR(5 DOWNTO 0);
     char_address_mode : OUT	STD_LOGIC_VECTOR(5 DOWNTO 0);
@@ -112,11 +117,11 @@ if(rising_edge(clk)) then
 
       -- score value
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 96 and pixel_column < 112)) then
-          temp_scoreval <= ZERO;
+          temp_scoreval <= ZERO + hundreds_in;
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 112 and pixel_column < 128)) then
-          temp_scoreval <= SIX;
+          temp_scoreval <= ZERO + tens_in;
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 128 and pixel_column < 144)) then
-          temp_scoreval <= NINE;
+          temp_scoreval <= ZERO + ones_in;
 			
       -- show 'TRAINING'
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 256 and pixel_column < 272)) then
@@ -136,12 +141,16 @@ if(rising_edge(clk)) then
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 368 and pixel_column < 384)) then
           temp_mode <= G;
       -- hearts  
-			  elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 512 and pixel_column < 528)) then --Heart 1
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 512 and pixel_column < 528)) then --Heart 1
           temp_heart <= HEARTSIGN; 
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 528 and pixel_column < 544)) then --Heart 2
-          temp_heart <= HEARTSIGN; 
+          temp_heart <= SPACE; 
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 544 and pixel_column < 560)) then --Heart 3
           temp_heart <= HEARTSIGN;
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 560 and pixel_column < 576)) then --Heart 4
+          temp_heart <= SPACE; 
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 576 and pixel_column < 592)) then --Heart 5
+          temp_heart <= HEARTSIGN; 
 			 else 
         temp_score <= SPACE;
         temp_scoreval <= SPACE;
@@ -165,12 +174,12 @@ if(rising_edge(clk)) then
           temp_score <= SEMICOLON;
 
       --score value
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 96 and pixel_column < 112)) then --Score Value 1
-          temp_scoreval <= ZERO;
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 112 and pixel_column < 128)) then --Score Value 2
-          temp_scoreval <= SIX;
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 128 and pixel_column < 144)) then --Score Value 3
-          temp_scoreval <= NINE;
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 96 and pixel_column < 112)) then
+          temp_scoreval <= ZERO + hundreds_in;
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 112 and pixel_column < 128)) then
+          temp_scoreval <= ZERO + tens_in;
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 128 and pixel_column < 144)) then
+          temp_scoreval <= ZERO + ones_in;
 
       -- show 'GAME'
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 256 and pixel_column < 272)) then --GAME
@@ -186,9 +195,14 @@ if(rising_edge(clk)) then
 			  elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 512 and pixel_column < 528)) then --Heart 1
           temp_heart <= HEARTSIGN; 
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 528 and pixel_column < 544)) then --Heart 2
-          temp_heart <= HEARTSIGN; 
+          temp_heart <= SPACE; 
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 544 and pixel_column < 560)) then --Heart 3
           temp_heart <= HEARTSIGN;
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 560 and pixel_column < 576)) then --Heart 4
+          temp_heart <= SPACE; 
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 576 and pixel_column < 592)) then --Heart 5
+          temp_heart <= HEARTSIGN; 
+
 			 else 
 			  temp_score <= SPACE;
         temp_scoreval <= SPACE;

@@ -121,7 +121,6 @@ if(rising_edge(clk)) then
 	else
 	reset_behaviour<='0';
 	end if;
-
 end if;
 end process;
 

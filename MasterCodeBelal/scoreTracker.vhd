@@ -8,10 +8,15 @@ port(clk, vert_sync: in std_logic;
 mouse_clicked: in std_logic;
 pipe_x_pos, pipe2_x_pos, pipe3_x_pos, pipe4_x_pos, bird_x_pos: in std_logic_vector(10 downto 0);
 reset_behaviour:in std_logic;
-second_out: out std_logic_vector(6 downto 0);
-tens_out: out std_logic_vector(6 downto 0);
-mins_out: out std_logic_vector(6 downto 0);
-count: out integer);
+second_out: out std_logic_vector(6 downto 0); --7seg_display
+tens_out: out std_logic_vector(6 downto 0); --7seg_display
+mins_out: out std_logic_vector(6 downto 0); --7seg_display
+count: out integer;
+score_ones_out: OUT std_logic_vector(3 downto 0);
+score_tens_out: OUT std_logic_vector(3 downto 0);
+score_hundreds_out: OUT std_logic_vector(3 downto 0)
+
+);
 end entity scoreTracker;
 
 
@@ -185,6 +190,10 @@ end process;
 enable1<= secs_enable;
 enable2<= tens_enable;
 enable3<=mins_enable;
+--score that goes to fontgen
+score_ones_out <= seconds;
+score_tens_out <= tens;
+score_hundreds_out <= mins;
 
 second_out<=sevenSeg_out_sec;
 tens_out<=sevenSeg_out_tens;

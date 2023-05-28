@@ -7,13 +7,16 @@ use ieee.numeric_std.all;
 
 ENTITY pipes IS
 	PORT
-		(pb1, pb2, clk, vert_sync, stop: IN std_logic;
+		(
+		clk, vert_sync, stop: IN std_logic;
           pixel_row, pixel_column: IN std_logic_vector(9 DOWNTO 0);
 		  reset_behaviour: IN std_logic;
 		  count: in integer;
 		  pipe_on, pipe_on_2, pipe_on_3, pipe_on_4, ground_on, blackbar: OUT std_logic;
 		pipe1_pos, pipe2_pos, pipe3_pos, pipe4_pos: out std_logic_vector (10 downto 0);
-		pipey, pipey2, pipey3, pipey4: out std_logic_vector(9 downto 0));		
+		pipey, pipey2, pipey3, pipey4: out std_logic_vector(9 downto 0);
+		mainscreen_red1, mainscreen_red2   : OUT std_logic
+		);		
 END pipes;
 
 architecture behavior of pipes is
@@ -76,8 +79,8 @@ else '0';
 pipe_on_4 <= '1' WHEN ((pixel_column<=pipe4_x_pos)and(pixel_column+gap_width>= pipe4_x_pos)and ((pipe4_y_pos+gap_height<=pixel_row and pixel_row<400)or((pixel_row<=pipe4_y_pos)and pixel_row>=40)))
 else '0';
 --Below is the SQUARES FOR MAINSCREEN
---mainscreen_red1 <= '1' WHEN (pixel_row >= 270 and pixel_row < 324 and pixel_column >= 251 and pixel_column < 389) ELSE '0';
---mainscreen_red2 <= '1' WHEN (pixel_row >= 340 and pixel_row < 390 and pixel_column >= 251 and pixel_column < 389) ELSE '0';
+mainscreen_red1 <= '1' WHEN (pixel_row >= 270 and pixel_row < 324 and pixel_column >= 251 and pixel_column < 389) ELSE '0';
+mainscreen_red2 <= '1' WHEN (pixel_row >= 340 and pixel_row < 390 and pixel_column >= 251 and pixel_column < 389) ELSE '0';
 
 --ground
 ground_on<= '1' WHEN((pixel_row>=400 and pixel_row<=480) and (pixel_column>= 0 and pixel_column<=640)) else '0';
