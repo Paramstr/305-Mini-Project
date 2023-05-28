@@ -131,7 +131,7 @@ move_bird: process (vert_sync)
 variable bird_y_pos: std_logic_vector(9 downto 0)		   := "0011110000";
 variable birdHead_y_pos: std_logic_vector(9 downto 0)      := "0011101100";  
 variable birdFoot_y_pos: std_logic_vector(9 downto 0)  := "0011111000";  
-
+variable constFalling: std_logic_vector(9 downto 0);
 begin
     -- Move ball once every vertical sync
 if (rising_edge(vert_sync)) then
@@ -144,11 +144,18 @@ if (rising_edge(vert_sync)) then
 	else
 	if(gamePause = '1') then
 		if(death = '0')then
-		if(prevMouse /= Mouse_click) then
-			if(mouse_click = '1') then
-				mouse_clicked<='1';
-				ball_y_motion<=CONV_STD_LOGIC_VECTOR(-10,10);
-			else
+			if(prevMouse /= Mouse_click) then
+				if(mouse_click = '1') then
+					mouse_clicked<='1';
+					ball_y_motion<=CONV_STD_LOGIC_VECTOR(-10,10);
+				else
+					if(ball_y_motion=CONV_STD_LOGIC_VECTOR(6,10)) then
+						ball_y_motion<=CONV_STD_LOGIC_VECTOR(6,10);
+					else
+						ball_y_motion<=ball_y_motion+CONV_STD_LOGIC_VECTOR(1,10);
+					end if;
+				end if;
+			else --(death = '0')
 				if(ball_y_motion=CONV_STD_LOGIC_VECTOR(6,10)) then
 					ball_y_motion<=CONV_STD_LOGIC_VECTOR(6,10);
 				else
@@ -156,12 +163,9 @@ if (rising_edge(vert_sync)) then
 				end if;
 			end if;
 		else
-			if(ball_y_motion=CONV_STD_LOGIC_VECTOR(6,10)) then
-				ball_y_motion<=CONV_STD_LOGIC_VECTOR(6,10);
-			else
-				ball_y_motion<=ball_y_motion+CONV_STD_LOGIC_VECTOR(1,10);
-			end if;
-		end if;
+			constFalling:= CONV_STD_LOGIC_VECTOR(1,10);
+			ball_y_motion<=constFalling+CONV_STD_LOGIC_VECTOR(1,10);
+			constFalling:= CONV_STD_LOGIC_VECTOR(1,10) + constFalling;
 		end if;
 		bird_y_pos := bird_y_pos + ball_y_motion;
 		birdHead_y_pos := birdHead_y_pos + ball_y_motion;

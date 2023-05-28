@@ -9,16 +9,21 @@ PORT(
     pixel_row, pixel_column: IN std_logic_vector(9 DOWNTO 0);
 
     currentMode: IN std_logic_vector(1 downto 0);
-    gameOn: IN std_logic;
+  
     --Score Tracking
     ones_in: IN std_logic_vector(3 downto 0);
     tens_in: IN std_logic_vector(3 downto 0);
     hundreds_in: in std_logic_vector(3 downto 0);
+    death: in std_logic;
+	 vert_sync: in std_logic;
+
     --char_rom outputs
     char_address_score : OUT	STD_LOGIC_VECTOR(5 DOWNTO 0);
     char_address_scoreval : OUT	STD_LOGIC_VECTOR(5 DOWNTO 0);
     char_address_mode : OUT	STD_LOGIC_VECTOR(5 DOWNTO 0);
-    char_address_heart	: OUT	STD_LOGIC_VECTOR(5 DOWNTO 0)
+    char_address_heart	: OUT	STD_LOGIC_VECTOR(5 DOWNTO 0);
+    char_address_gameover	: OUT	STD_LOGIC_VECTOR(5 DOWNTO 0)
+
     );
     --hearts_on, score_on: out std_logic);
 
@@ -91,6 +96,9 @@ architecture behaviour of fontgen is
    signal temp_score	: 	STD_LOGIC_VECTOR(5 DOWNTO 0);
    signal temp_mode : 	STD_LOGIC_VECTOR(5 DOWNTO 0);
    signal temp_heart : 	STD_LOGIC_VECTOR(5 DOWNTO 0);
+   signal temp_gameover : 	STD_LOGIC_VECTOR(5 DOWNTO 0);
+
+
 
 
 
@@ -100,7 +108,7 @@ show_score:process(clk)
 begin
 if(rising_edge(clk)) then
 
-		if(currentMode = "01" and gameOn = '1') then --############### 'TRAINING' ###############
+		if(currentMode = "01") then --############### 'TRAINING' ###############
       -- score    
         if((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 0 and pixel_column < 16)) then
           temp_score <= S;
@@ -141,24 +149,29 @@ if(rising_edge(clk)) then
         elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 368 and pixel_column < 384)) then
           temp_mode <= G;
       -- hearts  
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 512 and pixel_column < 528)) then --Heart 1
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 510 and pixel_column < 526)) then --Heart 1 (shifted by -2, reduced by 1)
           temp_heart <= HEARTSIGN; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 528 and pixel_column < 544)) then --Heart 2
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 526 and pixel_column < 542)) then --Heart 2 (shifted by -2, reduced by 1)
           temp_heart <= SPACE; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 544 and pixel_column < 560)) then --Heart 3
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 542 and pixel_column < 558)) then --Heart 3 (shifted by -2, reduced by 1)
           temp_heart <= HEARTSIGN;
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 560 and pixel_column < 576)) then --Heart 4
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 558 and pixel_column < 574)) then --Heart 4 (shifted by -2, reduced by 1)
           temp_heart <= SPACE; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 576 and pixel_column < 592)) then --Heart 5
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 574 and pixel_column < 590)) then --Heart 5 (shifted by -2, reduced by 1)
           temp_heart <= HEARTSIGN; 
+
+
+    
 			 else 
         temp_score <= SPACE;
         temp_scoreval <= SPACE;
         temp_mode <= SPACE;
         temp_heart <= SPACE;
+        temp_gameover <= SPACE;
        end if;
-          
-		elsif(currentMode = "10" and gameOn = '1') then -- ############### 'mode: Game' ###############
+        
+		
+    elsif(currentMode = "10") then -- ############### 'mode: Game' ###############
       -- score
 			  if((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 0 and pixel_column < 16)) then
           temp_score <= S;
@@ -192,26 +205,58 @@ if(rising_edge(clk)) then
           temp_mode <= E;
 
       -- hearts
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 514 and pixel_column < 530)) then --Heart 1 (shifted by 2)
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 510 and pixel_column < 526)) then --Heart 1 (shifted by -2, reduced by 1)
           temp_heart <= HEARTSIGN; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 530 and pixel_column < 546)) then --Heart 2 (shifted by 2)
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 526 and pixel_column < 542)) then --Heart 2 (shifted by -2, reduced by 1)
           temp_heart <= SPACE; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 546 and pixel_column < 562)) then --Heart 3 (shifted by 2)
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 542 and pixel_column < 558)) then --Heart 3 (shifted by -2, reduced by 1)
           temp_heart <= HEARTSIGN;
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 562 and pixel_column < 578)) then --Heart 4 (shifted by 2)
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 558 and pixel_column < 574)) then --Heart 4 (shifted by -2, reduced by 1)
           temp_heart <= SPACE; 
-        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 578 and pixel_column < 594)) then --Heart 5 (shifted by 2)
+        elsif((pixel_row >= 16 and pixel_row < 32) and (pixel_column >= 574 and pixel_column < 590)) then --Heart 5 (shifted by -2, reduced by 1)
           temp_heart <= HEARTSIGN; 
-    
+        
+      -- gameover condition    
+        elsif (death = '1') then
+          if((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 288 and pixel_column < 304)) then
+            temp_gameover <= G;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 304 and pixel_column < 320)) then
+            temp_gameover <= A;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 320 and pixel_column < 336)) then
+            temp_gameover <= M;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 336 and pixel_column < 352)) then
+            temp_gameover <= E;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 352 and pixel_column < 368)) then
+            temp_gameover <= SPACE;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 368 and pixel_column < 384)) then
+            temp_gameover <= O;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 384 and pixel_column < 400)) then
+            temp_gameover <= V;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 400 and pixel_column < 416)) then
+            temp_gameover <= E;
+          elsif((pixel_row >= 160 and pixel_row < 176) and (pixel_column >= 416 and pixel_column < 432)) then
+            temp_gameover <= R;
+        
+          else
+            temp_score <= SPACE;
+            temp_scoreval <= SPACE;
+            temp_mode <= SPACE;
+            temp_heart <= SPACE;
+            temp_gameover <= SPACE;
+          end if;
 
-			 else 
-			  temp_score <= SPACE;
+    
+        else 
+        temp_score <= SPACE;
         temp_scoreval <= SPACE;
         temp_mode <= SPACE;
         temp_heart <= SPACE;
-		    end if;
+        temp_gameover <= SPACE;
+        end if;
+    
 
-		elsif(currentMode = "00" and gameOn='0') then -- ############### SHOW 'mode: MAINSCREEN' ###############
+
+		elsif(currentMode = "00") then -- ############### SHOW 'mode: MAINSCREEN' ###############
       -- FlAPPY BIRD
         if((pixel_row >= 176 and pixel_row < 192) and (pixel_column >= 224 and pixel_column < 240)) then
           temp_mode <= F;
@@ -238,40 +283,41 @@ if(rising_edge(clk)) then
           --line under flappy bird
         elsif((pixel_row >= 224 and pixel_row < 240) and (pixel_column >= 100 and pixel_column < 540)) then
           temp_mode <= DASH;
-      -- TRAINING
+          --if(enable collision = '1' then it is hvoering above single player else if enable = 0 hover over practice)
         elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 222 and pixel_column < 238)) then
           temp_mode <= ARROWRIGHT;  
         elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 240 and pixel_column < 256)) then
           temp_mode <= SPACE;
-        --- main screen: Training
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 256 and pixel_column < 272)) then
-          temp_mode <= T;
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 272 and pixel_column < 288)) then
-          temp_mode <= R;
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 288 and pixel_column < 304)) then
-          temp_mode <= A;
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 304 and pixel_column < 320)) then
-          temp_mode <= I;
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 320 and pixel_column < 336)) then
-          temp_mode <= N;
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 336 and pixel_column < 352)) then
-          temp_mode <= I;
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 352 and pixel_column < 368)) then
-          temp_mode <= N;
-        elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 368 and pixel_column < 384)) then
-          temp_mode <= G;
-        
-        
+
+      --- main screen: Game
+      elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 256 and pixel_column < 272)) then
+        temp_mode <= G;
+      elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 272 and pixel_column < 288)) then
+        temp_mode <= A;
+      elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 288 and pixel_column < 304)) then
+        temp_mode <= M;
+      elsif((pixel_row >= 288 and pixel_row < 304) and (pixel_column >= 304 and pixel_column < 320)) then
+        temp_mode <= E;
       
-      --- Game
+      
+      --- TRAINING
+ 
         elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 256 and pixel_column < 272)) then
-          temp_mode <= G;
+          temp_mode <= T;
         elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 272 and pixel_column < 288)) then
-          temp_mode <= A;
+          temp_mode <= R;
         elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 288 and pixel_column < 304)) then
-          temp_mode <= M;
+          temp_mode <= A;
         elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 304 and pixel_column < 320)) then
-          temp_mode <= E;
+          temp_mode <= I;
+        elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 320 and pixel_column < 336)) then
+          temp_mode <= N;
+        elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 336 and pixel_column < 352)) then
+          temp_mode <= I;
+        elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 352 and pixel_column < 368)) then
+          temp_mode <= N;
+        elsif((pixel_row >= 352 and pixel_row < 368) and (pixel_column >= 368 and pixel_column < 384)) then
+          temp_mode <= G;
 			else
 			temp_score <= SPACE;
       temp_scoreval <= SPACE;
@@ -279,14 +325,6 @@ if(rising_edge(clk)) then
       temp_heart <= SPACE;
       
 			end if;
-		 
-		 
-      
-
-          
-          
-
-      -- ##########################################
 		end if;
  end if;
 end process show_score;
@@ -300,6 +338,6 @@ char_address_score <= temp_score;
 char_address_scoreval <= temp_scoreval;
 char_address_mode <= temp_mode;
 char_address_heart <= temp_heart;
-
+char_address_gameover <= temp_gameover;
 
 end architecture behaviour;

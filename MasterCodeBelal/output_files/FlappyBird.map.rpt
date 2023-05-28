@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FlappyBird
-Sun May 28 21:42:56 2023
+Sun May 28 23:48:00 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -25,21 +25,23 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
  17. Source assignments for char_rom:inst12|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
  18. Source assignments for char_rom:inst11|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
  19. Source assignments for char_rom:inst10|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
- 20. Parameter Settings for User Entity Instance: pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i
- 21. Parameter Settings for User Entity Instance: char_rom:inst13|altsyncram:altsyncram_component
- 22. Parameter Settings for User Entity Instance: char_rom:inst12|altsyncram:altsyncram_component
- 23. Parameter Settings for User Entity Instance: char_rom:inst11|altsyncram:altsyncram_component
- 24. Parameter Settings for User Entity Instance: char_rom:inst10|altsyncram:altsyncram_component
- 25. Parameter Settings for Inferred Entity Instance: pipes:inst16|lpm_divide:Mod1
- 26. Parameter Settings for Inferred Entity Instance: pipes:inst16|lpm_divide:Mod0
- 27. altsyncram Parameter Settings by Entity Instance
- 28. Port Connectivity Checks: "scoreTracker:inst7|bcd_counter:counterMins"
- 29. Port Connectivity Checks: "scoreTracker:inst7|bcd_counter:counterTens"
- 30. Port Connectivity Checks: "scoreTracker:inst7|bcd_counter:counterSec"
- 31. Port Connectivity Checks: "pipes:inst16|lfsr:lfsr_inst"
- 32. Post-Synthesis Netlist Statistics for Top Partition
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
+ 20. Source assignments for char_rom:inst17|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated
+ 21. Parameter Settings for User Entity Instance: pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i
+ 22. Parameter Settings for User Entity Instance: char_rom:inst13|altsyncram:altsyncram_component
+ 23. Parameter Settings for User Entity Instance: char_rom:inst12|altsyncram:altsyncram_component
+ 24. Parameter Settings for User Entity Instance: char_rom:inst11|altsyncram:altsyncram_component
+ 25. Parameter Settings for User Entity Instance: char_rom:inst10|altsyncram:altsyncram_component
+ 26. Parameter Settings for User Entity Instance: char_rom:inst17|altsyncram:altsyncram_component
+ 27. Parameter Settings for Inferred Entity Instance: pipes:inst16|lpm_divide:Mod1
+ 28. Parameter Settings for Inferred Entity Instance: pipes:inst16|lpm_divide:Mod0
+ 29. altsyncram Parameter Settings by Entity Instance
+ 30. Port Connectivity Checks: "scoreTracker:inst7|bcd_counter:counterMins"
+ 31. Port Connectivity Checks: "scoreTracker:inst7|bcd_counter:counterTens"
+ 32. Port Connectivity Checks: "scoreTracker:inst7|bcd_counter:counterSec"
+ 33. Port Connectivity Checks: "pipes:inst16|lfsr:lfsr_inst"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
 
 
 
@@ -65,16 +67,16 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 28 21:42:56 2023           ;
+; Analysis & Synthesis Status     ; Successful - Sun May 28 23:48:00 2023           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; FlappyBird                                      ;
 ; Top-level Entity Name           ; FlappyBird                                      ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 391                                             ;
+; Total registers                 ; 396                                             ;
 ; Total pins                      ; 35                                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 10,752                                          ;
+; Total block memory bits         ; 14,848                                          ;
 ; Total DSP Blocks                ; 0                                               ;
 ; Total HSSI RX PCSs              ; 0                                               ;
 ; Total HSSI PMA RX Deserializers ; 0                                               ;
@@ -245,20 +247,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1987                        ;
+; Estimate of Logic utilization (ALMs needed) ; 2010                        ;
 ;                                             ;                             ;
-; Combinational ALUT usage for logic          ; 3723                        ;
-;     -- 7 input functions                    ; 8                           ;
-;     -- 6 input functions                    ; 230                         ;
-;     -- 5 input functions                    ; 257                         ;
-;     -- 4 input functions                    ; 1038                        ;
-;     -- <=3 input functions                  ; 2190                        ;
+; Combinational ALUT usage for logic          ; 3764                        ;
+;     -- 7 input functions                    ; 4                           ;
+;     -- 6 input functions                    ; 238                         ;
+;     -- 5 input functions                    ; 281                         ;
+;     -- 4 input functions                    ; 1054                        ;
+;     -- <=3 input functions                  ; 2187                        ;
 ;                                             ;                             ;
-; Dedicated logic registers                   ; 391                         ;
+; Dedicated logic registers                   ; 396                         ;
 ;                                             ;                             ;
 ; I/O pins                                    ; 35                          ;
 ; Total MLAB memory bits                      ; 0                           ;
-; Total block memory bits                     ; 10752                       ;
+; Total block memory bits                     ; 14848                       ;
 ;                                             ;                             ;
 ; Total DSP Blocks                            ; 0                           ;
 ;                                             ;                             ;
@@ -267,8 +269,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                             ;
 ; Maximum fan-out node                        ; VGA_SYNC:inst|vert_sync_out ;
 ; Maximum fan-out                             ; 257                         ;
-; Total fan-out                               ; 14327                       ;
-; Average fan-out                             ; 3.40                        ;
+; Total fan-out                               ; 14627                       ;
+; Average fan-out                             ; 3.42                        ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -277,10 +279,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                      ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |FlappyBird                               ; 3723 (1)            ; 391 (0)                   ; 10752             ; 0          ; 35   ; 0            ; |FlappyBird                                                                                                              ; FlappyBird          ; work         ;
-;    |FSM:inst15|                           ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|FSM:inst15                                                                                                   ; FSM                 ; work         ;
+; |FlappyBird                               ; 3764 (1)            ; 396 (0)                   ; 14848             ; 0          ; 35   ; 0            ; |FlappyBird                                                                                                              ; FlappyBird          ; work         ;
+;    |FSM:inst15|                           ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|FSM:inst15                                                                                                   ; FSM                 ; work         ;
 ;    |MOUSE:inst5|                          ; 50 (50)             ; 63 (63)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|MOUSE:inst5                                                                                                  ; MOUSE               ; work         ;
-;    |VGA_SYNC:inst|                        ; 44 (44)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|VGA_SYNC:inst                                                                                                ; VGA_SYNC            ; work         ;
+;    |VGA_SYNC:inst|                        ; 43 (43)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|VGA_SYNC:inst                                                                                                ; VGA_SYNC            ; work         ;
 ;    |char_rom:inst10|                      ; 2 (2)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst10                                                                                              ; char_rom            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst10|altsyncram:altsyncram_component                                                              ; altsyncram          ; work         ;
 ;          |altsyncram_d5g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst10|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated                               ; altsyncram_d5g1     ; work         ;
@@ -290,13 +292,16 @@ refer to the applicable agreement for further details.
 ;    |char_rom:inst12|                      ; 3 (3)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst12                                                                                              ; char_rom            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst12|altsyncram:altsyncram_component                                                              ; altsyncram          ; work         ;
 ;          |altsyncram_d5g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst12|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated                               ; altsyncram_d5g1     ; work         ;
-;    |char_rom:inst13|                      ; 2 (2)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst13                                                                                              ; char_rom            ; work         ;
+;    |char_rom:inst13|                      ; 3 (3)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst13                                                                                              ; char_rom            ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst13|altsyncram:altsyncram_component                                                              ; altsyncram          ; work         ;
 ;          |altsyncram_d5g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 512               ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst13|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated                               ; altsyncram_d5g1     ; work         ;
-;    |collisions:inst9|                     ; 172 (172)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|collisions:inst9                                                                                             ; collisions          ; work         ;
-;    |flappy_bird:inst19|                   ; 154 (154)           ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|flappy_bird:inst19                                                                                           ; flappy_bird         ; work         ;
-;    |fontgen:inst14|                       ; 159 (159)           ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|fontgen:inst14                                                                                               ; fontgen             ; work         ;
-;    |pipes:inst16|                         ; 3041 (433)          ; 160 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16                                                                                                 ; pipes               ; work         ;
+;    |char_rom:inst17|                      ; 3 (3)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst17                                                                                              ; char_rom            ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst17|altsyncram:altsyncram_component                                                              ; altsyncram          ; work         ;
+;          |altsyncram_d5g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 4096              ; 0          ; 0    ; 0            ; |FlappyBird|char_rom:inst17|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated                               ; altsyncram_d5g1     ; work         ;
+;    |collisions:inst9|                     ; 173 (173)           ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|collisions:inst9                                                                                             ; collisions          ; work         ;
+;    |flappy_bird:inst19|                   ; 153 (153)           ; 42 (42)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|flappy_bird:inst19                                                                                           ; flappy_bird         ; work         ;
+;    |fontgen:inst14|                       ; 198 (198)           ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|fontgen:inst14                                                                                               ; fontgen             ; work         ;
+;    |pipes:inst16|                         ; 3033 (425)          ; 160 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16                                                                                                 ; pipes               ; work         ;
 ;       |lfsr:lfsr_inst|                    ; 20 (20)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16|lfsr:lfsr_inst                                                                                  ; lfsr                ; work         ;
 ;       |lpm_divide:Mod0|                   ; 1450 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;          |lpm_divide_uio:auto_generated|  ; 1450 (0)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pipes:inst16|lpm_divide:Mod0|lpm_divide_uio:auto_generated                                                   ; lpm_divide_uio      ; work         ;
@@ -310,7 +315,7 @@ refer to the applicable agreement for further details.
 ;    |pll:inst2|                            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2                                                                                                    ; pll                 ; pll          ;
 ;       |pll_0002:pll_inst|                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2|pll_0002:pll_inst                                                                                  ; pll_0002            ; pll          ;
 ;          |altera_pll:altera_pll_i|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i                                                          ; altera_pll          ; work         ;
-;    |renderer:inst8|                       ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|renderer:inst8                                                                                               ; renderer            ; work         ;
+;    |renderer:inst8|                       ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|renderer:inst8                                                                                               ; renderer            ; work         ;
 ;    |scoreTracker:inst7|                   ; 82 (46)             ; 48 (36)                   ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7                                                                                           ; scoreTracker        ; work         ;
 ;       |BCD_counter:counterMins|           ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterMins                                                                   ; BCD_counter         ; work         ;
 ;       |BCD_counter:counterSec|            ; 5 (5)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterSec                                                                    ; BCD_counter         ; work         ;
@@ -331,6 +336,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; char_rom:inst11|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 8            ; --           ; --           ; 4096 ; tcgrom.mif ;
 ; char_rom:inst12|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 8            ; --           ; --           ; 4096 ; tcgrom.mif ;
 ; char_rom:inst13|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 8            ; --           ; --           ; 4096 ; tcgrom.mif ;
+; char_rom:inst17|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 512          ; 8            ; --           ; --           ; 4096 ; tcgrom.mif ;
 +-------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+------------+
 
 
@@ -372,9 +378,9 @@ Encoding Type:  One-Hot
 ; FSM:inst15|reset_now                        ; Stuck at GND due to stuck port data_in   ;
 ; fontgen:inst14|temp_heart[1,2]              ; Merged with fontgen:inst14|temp_heart[0] ;
 ; fontgen:inst14|temp_heart[4]                ; Merged with fontgen:inst14|temp_heart[3] ;
+; fontgen:inst14|temp_scoreval[5]             ; Stuck at VCC due to stuck port data_in   ;
 ; fontgen:inst14|temp_heart[3]                ; Stuck at GND due to stuck port data_in   ;
 ; fontgen:inst14|temp_heart[5]                ; Stuck at VCC due to stuck port data_in   ;
-; fontgen:inst14|temp_scoreval[5]             ; Stuck at VCC due to stuck port data_in   ;
 ; flappy_bird:inst19|\move_bird:bird_y_pos[9] ; Stuck at GND due to stuck port data_in   ;
 ; VGA_SYNC:inst|pixel_row[9]                  ; Stuck at GND due to stuck port data_in   ;
 ; Total Number of Removed Registers = 19      ;                                          ;
@@ -396,12 +402,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 391   ;
-; Number of registers using Synchronous Clear  ; 94    ;
+; Total registers                              ; 396   ;
+; Number of registers using Synchronous Clear  ; 95    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 261   ;
+; Number of registers using Clock Enable       ; 267   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -411,7 +417,7 @@ Encoding Type:  One-Hot
 +-------------------------------------------------+---------+
 ; Inverted Register                               ; Fan out ;
 +-------------------------------------------------+---------+
-; flappy_bird:inst19|reset_behaviour              ; 152     ;
+; flappy_bird:inst19|reset_behaviour              ; 160     ;
 ; pipes:inst16|pipe2_x_pos[5]                     ; 6       ;
 ; pipes:inst16|pipe2_x_pos[3]                     ; 7       ;
 ; pipes:inst16|pipe2_x_pos[1]                     ; 5       ;
@@ -433,20 +439,6 @@ Encoding Type:  One-Hot
 ; pipes:inst16|pipe_x_pos[3]                      ; 7       ;
 ; pipes:inst16|pipe_x_pos[1]                      ; 5       ;
 ; pipes:inst16|pipe_x_pos[7]                      ; 6       ;
-; flappy_bird:inst19|\move_bird:birdFoot_y_pos[7] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdFoot_y_pos[6] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdFoot_y_pos[5] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdFoot_y_pos[4] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdFoot_y_pos[3] ; 3       ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[7]     ; 14      ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[6]     ; 7       ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[5]     ; 12      ;
-; flappy_bird:inst19|\move_bird:bird_y_pos[4]     ; 19      ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[2] ; 4       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[7] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[6] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[5] ; 3       ;
-; flappy_bird:inst19|\move_bird:birdHead_y_pos[3] ; 3       ;
 ; pipes:inst16|pipe_y_pos[2]                      ; 6       ;
 ; pipes:inst16|pipe_y_pos[7]                      ; 4       ;
 ; pipes:inst16|pipe_y_pos[3]                      ; 5       ;
@@ -463,6 +455,20 @@ Encoding Type:  One-Hot
 ; pipes:inst16|pipe4_y_pos[5]                     ; 4       ;
 ; pipes:inst16|pipe4_y_pos[4]                     ; 4       ;
 ; pipes:inst16|pipe4_y_pos[3]                     ; 5       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[2] ; 4       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[7] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[6] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[5] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdHead_y_pos[3] ; 3       ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[7]     ; 14      ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[6]     ; 7       ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[5]     ; 12      ;
+; flappy_bird:inst19|\move_bird:bird_y_pos[4]     ; 17      ;
+; flappy_bird:inst19|\move_bird:birdFoot_y_pos[7] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdFoot_y_pos[6] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdFoot_y_pos[5] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdFoot_y_pos[4] ; 3       ;
+; flappy_bird:inst19|\move_bird:birdFoot_y_pos[3] ; 3       ;
 ; pipes:inst16|initial                            ; 1       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[2]              ; 4       ;
 ; pipes:inst16|lfsr:lfsr_inst|reg[1]              ; 4       ;
@@ -501,32 +507,36 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |FlappyBird|collisions:inst9|instDie                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |FlappyBird|scoreTracker:inst7|counting[4]                          ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |FlappyBird|VGA_SYNC:inst|v_count[9]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |FlappyBird|scoreTracker:inst7|counting[12]                         ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |FlappyBird|VGA_SYNC:inst|v_count[0]                                ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterSec|counter[0]    ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterTens|counter[0]   ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |FlappyBird|scoreTracker:inst7|BCD_counter:counterMins|counter[0]   ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|\move_bird:bird_y_pos[0]             ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|ball_y_motion[9]                     ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[8]                              ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[4]                             ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[10]                            ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|\move_bird:birdHead_y_pos[0]         ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|ball_y_motion[5]                     ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[10]                             ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[0]                             ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[3]                             ;
 ; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe4_x_pos[10]                            ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 6 LEs                ; 10 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_scoreval[4]                         ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 12 LEs               ; 20 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_scoreval[0]                         ;
-; 18:1               ; 6 bits    ; 72 LEs        ; 24 LEs               ; 48 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_score[5]                            ;
-; 42:1               ; 3 bits    ; 84 LEs        ; 72 LEs               ; 12 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_mode[0]                             ;
-; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|\move_bird:bird_y_pos[5]             ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[6]                              ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[1]                             ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[1]                             ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe4_x_pos[8]                             ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |FlappyBird|fontgen:inst14|temp_gameover[4]                         ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; Yes        ; |FlappyBird|fontgen:inst14|temp_heart[5]                            ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; Yes        ; |FlappyBird|fontgen:inst14|temp_gameover[2]                         ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|fontgen:inst14|temp_scoreval[5]                         ;
+; 14:1               ; 4 bits    ; 36 LEs        ; 16 LEs               ; 20 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_scoreval[2]                         ;
+; 20:1               ; 6 bits    ; 78 LEs        ; 54 LEs               ; 24 LEs                 ; Yes        ; |FlappyBird|fontgen:inst14|temp_score[0]                            ;
+; 40:1               ; 2 bits    ; 52 LEs        ; 46 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|fontgen:inst14|temp_mode[1]                             ;
+; 45:1               ; 2 bits    ; 60 LEs        ; 52 LEs               ; 8 LEs                  ; Yes        ; |FlappyBird|fontgen:inst14|temp_mode[0]                             ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; Yes        ; |FlappyBird|flappy_bird:inst19|\move_bird:birdHead_y_pos[6]         ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe_x_pos[5]                              ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe2_x_pos[3]                             ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe3_x_pos[9]                             ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |FlappyBird|pipes:inst16|pipe4_x_pos[9]                             ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |FlappyBird|fontgen:inst14|temp_scoreval                            ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |FlappyBird|char_rom:inst12|Mux0                                    ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 25 LEs               ; 0 LEs                  ; No         ; |FlappyBird|char_rom:inst12|Mux0                                    ;
 ; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |FlappyBird|pipes:inst16|speed                                      ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display1|SevenSeg_out[5] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display2|SevenSeg_out[3] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display3|SevenSeg_out[3] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display2|SevenSeg_out[2] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |FlappyBird|scoreTracker:inst7|BCD_to_7Seg:display3|SevenSeg_out[5] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------+
 
 
@@ -559,6 +569,15 @@ Encoding Type:  One-Hot
 
 +-------------------------------------------------------------------------------------------------------+
 ; Source assignments for char_rom:inst10|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                      ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                       ;
++---------------------------------+--------------------+------+-----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Source assignments for char_rom:inst17|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated ;
 +---------------------------------+--------------------+------+-----------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                      ;
 +---------------------------------+--------------------+------+-----------------------------------------+
@@ -1057,6 +1076,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: char_rom:inst17|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------+
+; Parameter Name                     ; Value                ; Type                             ;
++------------------------------------+----------------------+----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                          ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                          ;
+; WIDTH_A                            ; 8                    ; Signed Integer                   ;
+; WIDTHAD_A                          ; 9                    ; Signed Integer                   ;
+; NUMWORDS_A                         ; 512                  ; Signed Integer                   ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WIDTH_B                            ; 1                    ; Untyped                          ;
+; WIDTHAD_B                          ; 1                    ; Untyped                          ;
+; NUMWORDS_B                         ; 1                    ; Untyped                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                          ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                          ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                   ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                          ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                          ;
+; BYTE_SIZE                          ; 8                    ; Untyped                          ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; INIT_FILE                          ; tcgrom.mif           ; Untyped                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                          ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                          ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                          ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_d5g1      ; Untyped                          ;
++------------------------------------+----------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: pipes:inst16|lpm_divide:Mod1 ;
 +------------------------+----------------+-------------------------------------+
@@ -1108,7 +1188,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-------------------------------------------------+
 ; Name                                      ; Value                                           ;
 +-------------------------------------------+-------------------------------------------------+
-; Number of entity instances                ; 4                                               ;
+; Number of entity instances                ; 5                                               ;
 ; Entity Instance                           ; char_rom:inst13|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                             ;
 ;     -- WIDTH_A                            ; 8                                               ;
@@ -1143,6 +1223,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                            ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ;
 ; Entity Instance                           ; char_rom:inst10|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                             ;
+;     -- WIDTH_A                            ; 8                                               ;
+;     -- NUMWORDS_A                         ; 512                                             ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                    ;
+;     -- WIDTH_B                            ; 1                                               ;
+;     -- NUMWORDS_B                         ; 1                                               ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                          ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                    ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                            ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                       ;
+; Entity Instance                           ; char_rom:inst17|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                             ;
 ;     -- WIDTH_A                            ; 8                                               ;
 ;     -- NUMWORDS_A                         ; 512                                             ;
@@ -1221,15 +1312,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 391                         ;
+; arriav_ff             ; 396                         ;
 ;     CLR               ; 33                          ;
-;     ENA               ; 179                         ;
+;     ENA               ; 185                         ;
 ;     ENA CLR           ; 15                          ;
 ;     ENA SCLR          ; 67                          ;
-;     SCLR              ; 27                          ;
-;     plain             ; 70                          ;
+;     SCLR              ; 28                          ;
+;     plain             ; 68                          ;
 ; arriav_io_obuf        ; 2                           ;
-; arriav_lcell_comb     ; 3726                        ;
+; arriav_lcell_comb     ; 3767                        ;
 ;     arith             ; 1502                        ;
 ;         0 data inputs ; 108                         ;
 ;         1 data inputs ; 285                         ;
@@ -1237,24 +1328,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 489                         ;
 ;         4 data inputs ; 464                         ;
 ;         5 data inputs ; 44                          ;
-;     extend            ; 8                           ;
-;         7 data inputs ; 8                           ;
-;     normal            ; 2202                        ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 2247                        ;
 ;         1 data inputs ; 38                          ;
-;         2 data inputs ; 964                         ;
-;         3 data inputs ; 183                         ;
-;         4 data inputs ; 574                         ;
-;         5 data inputs ; 213                         ;
-;         6 data inputs ; 230                         ;
+;         2 data inputs ; 956                         ;
+;         3 data inputs ; 188                         ;
+;         4 data inputs ; 590                         ;
+;         5 data inputs ; 237                         ;
+;         6 data inputs ; 238                         ;
 ;     shared            ; 14                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 12                          ;
 ; boundary_port         ; 35                          ;
 ; generic_pll           ; 1                           ;
-; stratixv_ram_block    ; 32                          ;
+; stratixv_ram_block    ; 40                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 94.70                       ;
-; Average LUT depth     ; 60.13                       ;
+; Max LUT depth         ; 95.00                       ;
+; Average LUT depth     ; 59.75                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1273,15 +1364,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Sun May 28 21:42:29 2023
+    Info: Processing started: Sun May 28 23:47:33 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FlappyBird -c FlappyBird
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
-    Info (12022): Found design unit 1: FSM-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/FSM.vhd Line: 19
+    Info (12022): Found design unit 1: FSM-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/FSM.vhd Line: 18
     Info (12023): Found entity 1: FSM File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/FSM.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file fontgen.vhd
-    Info (12022): Found design unit 1: fontgen-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 28
+    Info (12022): Found design unit 1: fontgen-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 33
     Info (12023): Found entity 1: fontgen File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file collisions.vhd
     Info (12022): Found design unit 1: collisions-behaviour File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/collisions.vhd Line: 18
@@ -1434,16 +1525,17 @@ Info (12133): Instantiated megafunction "pll:inst2|pll_0002:pll_inst|altera_pll:
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "renderer" for hierarchy "renderer:inst8"
 Warning (10492): VHDL Process Statement warning at renderer.vhd(24): signal "currentMode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at renderer.vhd(29): signal "rom_gameover" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 29
 Warning (10492): VHDL Process Statement warning at renderer.vhd(33): signal "rom_hearts" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 33
 Warning (10492): VHDL Process Statement warning at renderer.vhd(37): signal "rom_mode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 37
 Warning (10492): VHDL Process Statement warning at renderer.vhd(41): signal "rom_scoreval" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 41
 Warning (10492): VHDL Process Statement warning at renderer.vhd(45): signal "rom_score" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at renderer.vhd(49): signal "blackbar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at renderer.vhd(53): signal "pipe_on3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at renderer.vhd(53): signal "pipe_on4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at renderer.vhd(63): signal "rom_mode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 63
-Warning (10492): VHDL Process Statement warning at renderer.vhd(67): signal "mainscreen_red1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 67
-Warning (10492): VHDL Process Statement warning at renderer.vhd(71): signal "mainscreen_red2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at renderer.vhd(54): signal "blackbar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at renderer.vhd(58): signal "pipe_on3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at renderer.vhd(58): signal "pipe_on4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at renderer.vhd(68): signal "rom_mode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at renderer.vhd(72): signal "mainscreen_red1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at renderer.vhd(76): signal "mainscreen_red2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/renderer.vhd Line: 76
 Info (12128): Elaborating entity "pipes" for hierarchy "pipes:inst16"
 Info (12128): Elaborating entity "lfsr" for hierarchy "pipes:inst16|lfsr:lfsr_inst" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 55
 Warning (10492): VHDL Process Statement warning at LFSR.vhd(23): signal "seed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/LFSR.vhd Line: 23
@@ -1498,35 +1590,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_d5g1 File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/db/altsyncram_d5g1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_d5g1" for hierarchy "char_rom:inst13|altsyncram:altsyncram_component|altsyncram_d5g1:auto_generated" File: c:/intelfpga/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "fontgen" for hierarchy "fontgen:inst14"
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(31): used explicit default value for signal "A" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 31
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(32): used explicit default value for signal "B" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 32
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(33): used explicit default value for signal "C" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 33
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(34): used explicit default value for signal "D" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 34
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(35): used explicit default value for signal "E" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 35
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(36): used explicit default value for signal "F" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 36
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(37): used explicit default value for signal "G" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 37
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(39): used explicit default value for signal "I" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 39
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(42): used explicit default value for signal "L" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 42
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(43): used explicit default value for signal "M" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 43
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(44): used explicit default value for signal "N" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 44
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(45): used explicit default value for signal "O" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 45
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(46): used explicit default value for signal "P" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 46
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(48): used explicit default value for signal "R" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 48
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(49): used explicit default value for signal "S" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 49
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(50): used explicit default value for signal "T" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 50
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(55): used explicit default value for signal "Y" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 55
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(57): used explicit default value for signal "ARROWRIGHT" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 57
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(58): used explicit default value for signal "SPACE" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 58
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(59): used explicit default value for signal "SEMICOLON" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 59
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(65): used explicit default value for signal "HEARTSIGN" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 65
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(71): used explicit default value for signal "DASH" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 71
-Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(74): used explicit default value for signal "ZERO" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 74
-Warning (12001): Port "hundreds_in[4]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
-Warning (12001): Port "hundreds_in[5]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
-Warning (12001): Port "ones_in[4]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
-Warning (12001): Port "ones_in[5]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
-Warning (12001): Port "tens_in[4]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
-Warning (12001): Port "tens_in[5]" does not exist in entity definition of "fontgen".  The port's range differs between the entity definition and its actual instantiation, "fontgen:inst14".
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(36): used explicit default value for signal "A" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 36
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(37): used explicit default value for signal "B" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 37
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(38): used explicit default value for signal "C" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 38
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(39): used explicit default value for signal "D" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 39
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(40): used explicit default value for signal "E" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 40
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(41): used explicit default value for signal "F" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 41
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(42): used explicit default value for signal "G" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 42
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(44): used explicit default value for signal "I" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 44
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(47): used explicit default value for signal "L" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 47
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(48): used explicit default value for signal "M" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 48
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(49): used explicit default value for signal "N" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 49
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(50): used explicit default value for signal "O" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 50
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(51): used explicit default value for signal "P" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 51
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(53): used explicit default value for signal "R" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 53
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(54): used explicit default value for signal "S" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 54
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(55): used explicit default value for signal "T" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 55
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(57): used explicit default value for signal "V" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 57
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(60): used explicit default value for signal "Y" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 60
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(62): used explicit default value for signal "ARROWRIGHT" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 62
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(63): used explicit default value for signal "SPACE" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 63
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(64): used explicit default value for signal "SEMICOLON" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 64
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(70): used explicit default value for signal "HEARTSIGN" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 70
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(76): used explicit default value for signal "DASH" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 76
+Warning (10540): VHDL Signal Declaration warning at fontgen.vhd(79): used explicit default value for signal "ZERO" because signal was never assigned a value File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/fontgen.vhd Line: 79
 Info (278001): Inferred 2 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipes:inst16|Mod1" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 127
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "pipes:inst16|Mod0" File: H:/Documents/GitHub/305-Mini-Project/MasterCodeBelal/pipes.vhd Line: 100
@@ -1566,17 +1653,17 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 3 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll:inst2|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga/18.1/quartus/libraries/megafunctions/altera_pll.v Line: 748
     Info: Must be connected
-Info (21057): Implemented 3914 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3962 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 29 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 3846 logic cells
-    Info (21064): Implemented 32 RAM segments
+    Info (21061): Implemented 3886 logic cells
+    Info (21064): Implemented 40 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
-    Info: Peak virtual memory: 4941 megabytes
-    Info: Processing ended: Sun May 28 21:42:56 2023
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 99 warnings
+    Info: Peak virtual memory: 4938 megabytes
+    Info: Processing ended: Sun May 28 23:48:01 2023
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:32
 
 

@@ -7,7 +7,7 @@ entity renderer is
 PORT(
 clk: in std_logic;
 pipe_on, pipe_on2, pipe_on3, pipe_on4, bird_on, ground_on, blackbar: in std_logic; 
-rom_hearts, rom_mode, rom_scoreval, rom_score: in std_logic; --Char_om Inputs
+rom_hearts, rom_mode, rom_scoreval, rom_score, rom_gameover: in std_logic; --Char_om Inputs
 currentMode: in std_logic_vector(1 downto 0);
 mainscreen_red1, mainscreen_red2   : IN std_logic;	-- Mainscreen Red rectanges
 red_out, green_out, blue_out: OUT STD_LOGIC
@@ -26,10 +26,10 @@ if(currentMode = "01" or currentMode = "10") then --normal mode
         red_out<= '1';
         green_out<='1';
         blue_out<='0';
-    elsif(ground_on = '1') then
+    elsif(rom_gameover = '1') then
         red_out<= '1';
-        green_out<='0';
-        blue_out<='0';
+        green_out<='1';
+        blue_out<='1';
     elsif(rom_hearts = '1') then
         red_out<= '1';
         green_out<='0';
@@ -46,6 +46,11 @@ if(currentMode = "01" or currentMode = "10") then --normal mode
         red_out<= '1';
         green_out<='1';
         blue_out<='1';
+
+    elsif(ground_on = '1') then
+        red_out<= '1';
+        green_out<='0';
+        blue_out<='0';
     elsif(blackbar = '1') then
         red_out<= '0';
         green_out<='0';

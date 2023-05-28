@@ -88,6 +88,7 @@ process(vert_sync)
         counter:=CONV_STD_LOGIC_VECTOR(0,2);
         instDie:= '0';
         collision:='0';
+        death<='0';
     elsif(enable='1')then
         if( -- Pipe 1
             (bird_right>=pipe1_left)
